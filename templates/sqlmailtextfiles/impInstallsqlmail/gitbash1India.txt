@@ -1,0 +1,133 @@
+git bash commands I followed PMD's installation of conda
+C:\Users\cody\Downloads\Git\gitcode\
+1USEthis2017Oct25\
+gymtime\templates\gymtimetextfiles\impInstallgymtime\gitbash1India.txt
+
+git bash commands I followed PMD's installation of conda
+C:\Users\cody\Downloads\Git\gitcode\
+1USEthis2017Oct25\
+goodmed\templates\goodmedtextfiles\impInstall
+
+3:09 PM 11/1/2017
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ python
+Python 3.6.2 |Anaconda, Inc.| (default, Sep 19 2017, 08:03:39) [MSC v.1900 64 bi
+t (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode
+$ ls
+1BrowserJavaScriptLC101Unit3DOT2.txt  frontend/       LC101/    proj1/
+1JavaScriptLC101Unit3DOT2.txt         gmail_project/  MyJS/     proj2/
+1USEthis2017Oct25/                    JS2017/         myshop1/
+dontUse/                              JSstudios/      myshop2/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode
+$ cd 1USEthis2017Oct25
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25
+$ ls
+1aHowTO/  1HowTO/  2HOWto/  balletclassstu/  goodmed/  gymtime/  spellingbee/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25
+$ cd gymtime
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ ls
+gymtimeaddList.html  gymtimehome.html   readme.txt
+gymtimebye.html      gymtimemail2.html  templates/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ touch maingym.py
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ conda create -n envindia_flask
+Fetching package metadata .............
+Solving package specifications:
+Package plan for installation in environment C:\Miniconda3\envs\envindia_flask:
+
+Proceed ([y]/n)? y
+
+#
+# To activate this environment, use:
+# > activate envindia_flask
+#
+# To deactivate an active environment, use:
+# > deactivate
+#
+# * for power-users using bash, you must source
+#
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ source activate envindia_flask
+(envindia_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ conda install flask
+Fetching package metadata .............
+Solving package specifications: .
+
+Package plan for installation in environment C:\Miniconda3\envs\envindia_flask:
+
+The following NEW packages will be INSTALLED:
+
+    certifi:        2017.7.27.1-py36h043bc9e_0
+    click:          6.7-py36hec8c647_0
+    flask:          0.12.2-py36h98b5e8f_0
+    itsdangerous:   0.24-py36hb6c5a24_1
+    jinja2:         2.9.6-py36h10aa3a0_1
+    markupsafe:     1.0-py36h0e26971_1
+    pip:            9.0.1-py36h226ae91_4
+    python:         3.6.3-h210ce5f_2
+    setuptools:     36.5.0-py36h65f9e6e_0
+    vc:             14-h2379b0c_2
+    vs2015_runtime: 14.0.25123-hd4c4e62_2
+    werkzeug:       0.12.2-py36h866a736_0
+    wheel:          0.29.0-py36h6ce6cde_1
+    wincertstore:   0.2-py36h7fe50ca_0
+
+Proceed ([y]/n)? y
+
+(envindia_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ atom .
+
+(envindia_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ python maingym.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 199-800-417
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [01/Nov/2017 15:31:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [01/Nov/2017 15:31:38] "GET /india HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\gymtime\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 199-800-417
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+python enabled to print this
+127.0.0.1 - - [01/Nov/2017 15:35:39] "GET /india HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\gymtime\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 199-800-417
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+python enabled to print this
+127.0.0.1 - - [01/Nov/2017 15:43:19] "GET /india HTTP/1.1" 200 -
+(envindia_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ source deactivate
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$
+========++++++++============3:49 PM 11/1/2017
+
+============+++++++=============

@@ -1,0 +1,220 @@
+
+
+==========+++++++==========
+6:54 AM 12/10/2017
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode/1USEthis2017Oct25/gymtime
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ ls
+gymtimebye.html   gymtimemail2.html  readme.txt
+gymtimehome.html  maingym.py         templates/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   maingym.py
+        modified:   templates/gymtimeaddList.html
+        modified:   templates/ipform.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        templates/gymtimeimages/ExperimentsGymtime/
+        templates/gymtimeimages/successGymTimePics/differenceBtwUsingServerAndNotUsingServer/
+        templates/gymtimeimages/successGymTimePics/gymtime2017Dec7SubmitDisplaysIpformHTMLwithoutServer.JPG
+        templates/gymtimetextfiles/Hint1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ git add .
+error: open("templates/gymtimeimages/successGymTimePics/differenceBtwUsingServerAndNotUsingServer/2017Dec5pm0152dIFFERENCEbtwGymtimeaddListIsNOTrenderedThroSERVERandRenderedThroFlaskAppSERVERGivesIndiaWorksDOThtmlFile.JPG"): Filename too long
+error: unable to index file templates/gymtimeimages/successGymTimePics/differenceBtwUsingServerAndNotUsingServer/2017Dec5pm0152dIFFERENCEbtwGymtimeaddListIsNOTrenderedThroSERVERandRenderedThroFlaskAppSERVERGivesIndiaWorksDOThtmlFile.JPG
+fatal: adding files failed
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ git add .
+error: open("templates/gymtimeimages/successGymTimePics/differenceBtwUsingServerAndNotUsingServer/gymtime2017Dec7SubmitDisplaysIpformHTMLthroughServerDIFFERENCEbtwGymtimeaddListIsNOTrenderedThroSERVERandRenderedThroFlaskAp.JPG"): Filename too long
+error: unable to index file templates/gymtimeimages/successGymTimePics/differenceBtwUsingServerAndNotUsingServer/gymtime2017Dec7SubmitDisplaysIpformHTMLthroughServerDIFFERENCEbtwGymtimeaddListIsNOTrenderedThroSERVERandRenderedThroFlaskAp.JPG
+fatal: adding files failed
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ git add .
+error: open("templates/gymtimeimages/successGymTimePics/differenceBtwUsingServerAndNotUsingServer/gymtime2017Dec7SubmitDisplaysIpformHTMLthroughServerDIFFERENCEbtwGymtimeaddListIsNOTrenderedThroSERVERandRenderedThroFlaskAp.JPG"): Filename too long
+error: unable to index file templates/gymtimeimages/successGymTimePics/differenceBtwUsingServerAndNotUsingServer/gymtime2017Dec7SubmitDisplaysIpformHTMLthroughServerDIFFERENCEbtwGymtimeaddListIsNOTrenderedThroSERVERandRenderedThroFlaskAp.JPG
+fatal: adding files failed
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ git add .
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ git commit -m "imgs ofDIFFredringThroServerANdNot"
+[master a361793] imgs ofDIFFredringThroServerANdNot
+ 13 files changed, 33 insertions(+), 11 deletions(-)
+ create mode 100644 templates/gymtimeimages/ExperimentsGymtime/1XPRMNTipformDOThtml.JPG
+ create mode 100644 templates/gymtimeimages/ExperimentsGymtime/1xprmtGymtimeaddListDOThtml.JPG
+ create mode 100644 templates/gymtimeimages/ExperimentsGymtime/exptGymtimeSuccess/gymtime2017Dec7SubmitDISPLAYSipformDOThtmlUsingServer.JPG
+ create mode 100644 templates/gymtimeimages/ExperimentsGymtime/exptGymtimeSuccess/gymtime2017Dec7SubmitDisplaysHardCodedMessageUsingServer.JPG
+ create mode 100644 templates/gymtimeimages/ExperimentsGymtime/exptGymtimeSuccess/gymtime2017Dec7SubmitDisplaysIpformHTMLwithoutServer.JPG
+ create mode 100644 templates/gymtimeimages/successGymTimePics/differenceBtwUsingServerAndNotUsingServer/2017Dec5pm0152DiffNOTrenderedThroSERVERandRenderedThroFlaskAppSERVERGivesIndiaWorksDOThtmlFile.JPG
+ create mode 100644 templates/gymtimeimages/successGymTimePics/differenceBtwUsingServerAndNotUsingServer/gymtime2017Dec7SubmitHTMLthroServerDIFFgymtimeaddListIsNOTrenderedThroSERVERandRenderedThroFlaskAp.JPG
+ create mode 100644 templates/gymtimeimages/successGymTimePics/differenceBtwUsingServerAndNotUsingServer/gymtime2017Dec7SubmitHTMLwithoutServerDIFFgymtimRenderedThroLocalNOTrenderedThroSERVERand.JPG
+ create mode 100644 templates/gymtimeimages/successGymTimePics/gymtime2017Dec7SubmitDisplaysIpformHTMLwithoutServer.JPG
+ create mode 100644 templates/gymtimetextfiles/Hint1.txt
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ git push origin master
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (19/19), 713.55 KiB | 0 bytes/s, done.
+Total 19 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 7 local objects.
+To https://github.com/HannahMoses/gymtime.git
+   290409f..a361793  master -> master
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ conda env list
+# conda environments:
+#
+env_flask                C:\Miniconda3\envs\env_flask
+envindia_flask           C:\Miniconda3\envs\envindia_flask
+hello-flask              C:\Miniconda3\envs\hello-flask
+helloflask               C:\Miniconda3\envs\helloflask
+root                  *  C:\Miniconda3
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ source activate env_flask
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ python maingym.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [10/Dec/2017 06:53:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [10/Dec/2017 06:53:05] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [10/Dec/2017 06:53:14] "GET /exerhours HTTP/1.1" 200 -
+127.0.0.1 - - [10/Dec/2017 06:53:14] "GET /gymtimestyling/gymtimestyle2.css HTTP
+/1.1" 404 -
+127.0.0.1 - - [10/Dec/2017 06:53:18] "GET /ipform?usrmail= HTTP/1.1" 200 -
+127.0.0.1 - - [10/Dec/2017 06:53:18] "GET /gymtimestyling/gymtimestyle2.css HTTP
+/1.1" 404 -
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ source deactivate
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$
+
+
+
+===============++++++++++++++===========
+1:53 PM 12/5/2017
+GITBASH commands on Tues2017Dec5 to display gymtimeaddList.html THROUGH the server using Virtual environment backend framework app ,Flask.
+
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode/1USEthis2017Oct25/gymtime
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ conda env list
+# conda environments:
+#
+env_flask                C:\Miniconda3\envs\env_flask
+envindia_flask           C:\Miniconda3\envs\envindia_flask
+hello-flask              C:\Miniconda3\envs\hello-flask
+helloflask               C:\Miniconda3\envs\helloflask
+root                  *  C:\Miniconda3
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ source activate env_flask
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ python maingym.py
+Traceback (most recent call last):
+  File "maingym.py", line 32, in <module>
+    @app.route("/exerhours")
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1080,
+ in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 64, i
+n wrapper_func
+    return f(self, *args, **kwargs)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1051,
+ in add_url_rule
+    'existing endpoint function: %s' % endpoint)
+AssertionError: View function mapping is overwriting an existing endpoint functi
+on: exerhours
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ python maingym.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\gymtime\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\gymtime\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [05/Dec/2017 13:16:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:16:09] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2017 13:16:33] "GET /test HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:16:34] "GET /gymtimestyling/gymtimestyle2.css HTTP
+/1.1" 404 -
+python enabled to print this
+127.0.0.1 - - [05/Dec/2017 13:17:17] "GET /india?usrmail= HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:30:00] "GET / HTTP/1.1" 200 -
+python enabled to print this
+127.0.0.1 - - [05/Dec/2017 13:31:09] "GET /india HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:31:17] "GET /exerhours HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:31:17] "GET /gymtimestyling/gymtimestyle2.css HTTP
+/1.1" 404 -
+python enabled to print this
+127.0.0.1 - - [05/Dec/2017 13:31:22] "GET /india?usrmail= HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:34:55] "GET / HTTP/1.1" 200 -
+python enabled to print this
+127.0.0.1 - - [05/Dec/2017 13:35:12] "GET /india HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:35:33] "GET /india/exerhours HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2017 13:35:43] "GET /exerhours HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:35:43] "GET /gymtimestyling/gymtimestyle2.css HTTP
+/1.1" 404 -
+python enabled to print this
+127.0.0.1 - - [05/Dec/2017 13:35:45] "GET /india?usrmail= HTTP/1.1" 200 -
+python enabled to print this
+127.0.0.1 - - [05/Dec/2017 13:37:56] "GET /india HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:38:04] "GET /exerhours HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:38:04] "GET /gymtimestyling/gymtimestyle2.css HTTP
+/1.1" 404 -
+127.0.0.1 - - [05/Dec/2017 13:38:45] "GET /exerhours HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:38:45] "GET /templates/gymtimestyling/gymtimestyle
+2.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2017 13:38:47] "GET /exerhours HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:38:47] "GET /templates/gymtimestyling/gymtimestyle
+2.css HTTP/1.1" 404 -
+python enabled to print this
+127.0.0.1 - - [05/Dec/2017 13:42:19] "GET /india?usrmail=hannahmoses612%40gmail.
+com HTTP/1.1" 200 -
+
+

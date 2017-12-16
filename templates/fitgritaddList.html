@@ -1,0 +1,55 @@
+
+<! DOCTYPE html>
+<html>
+<head><title> EDIT PERSONAL TRAINING JOURNAL </title>
+<link rel="stylesheet" href="fitgritstyling/fitgritstyle1.css">
+
+<!--
+<link href=" {{ url_for('static', filename='fitgritstyle1.css')}}" rel="stylesheet">
+-->
+ </head>
+<body>
+    <h1> My  fitness training Journal  </h1>
+    <p><a href="file:///C:/Users/cody/Downloads/Git/gitcode/fitgrit/fitgrithome.html"><b>HOME</b></a></p>
+<p2 id="mylist"></p2>
+<p1 id="addmedarr"></p1>
+<p1 id="verticalist"></p1>
+<script>
+var ExerciseHours = [ " "];
+var itemsIaddedNow = Array.from(ExerciseHours);
+function myFunction() {
+    var itemName = prompt("Please enter number of hours you have exercised", "");
+    ExerciseHours.unshift(itemName);
+    document.getElementById("addmedarr").innerHTML = ExerciseHours;
+    }
+    function itemsdone(){
+        document.getElementById("newlist").innerHTML="Newly added Fit grit hours are :  ";
+        document.getElementById("done").innerHTML = ExerciseHours;
+    }
+document.getElementById("mylist").innerHTML = ExerciseHours;
+</script> <p>Do you want to add more Fit grit hours? </p>
+<button class="button" onclick="myFunction()">Add more Fit grit hours</button><br><br>
+<p id="newlist"></p>
+<p id="done"> </p>
+<button class="button" onclick="itemsdone()">No more Fit grit hours</button><br><br>
+<div>
+    <p8>To mail Fit grit hours to your email account,<br> enter your email below:</p8>
+
+        <p7><form action='/email' method="POST">
+          <label for="firstname" type="text" >Firstname</label>
+          <input type="text" name="firstname"/><br><br>
+          <label for="email" type="text" >Email</label>
+          <input type="email" name="email"/><br><br>
+          <label for="message" type="text" >Fit grit Hours</label>
+          <input type="text" name="fitgrithours"/><br><br>
+          <input type="submit" value="Submit" >
+      </form>
+  </p7>
+        <script>
+
+        }
+        </script>
+        <p1>Please enter correct email address ! </p1>
+    </div>
+</body>
+</html>

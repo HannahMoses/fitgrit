@@ -1,0 +1,439 @@
+1:56 PM 12/11/2017 CEM PDM
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode/iUSEthis2017Oct25/sqltime
+bash: cd: gitcode/iUSEthis2017Oct25/sqltime: No such file or directory
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode/iUSEthis2017Oct25/sqlmail
+bash: cd: gitcode/iUSEthis2017Oct25/sqlmail: No such file or directory
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ ls
+1.JPG                   bin/           H2K2017/          ReleaseNotes.html
+1index/                 cmd/           kidsDwnld/        TA2017LC101/
+1myshopCodeTextFiles/   dev/           LICENSE.txt       tmp/
+1myshopGitCommands.txt  dontUseNow/    microblog/        unins000.dat
+1PrepInterv/            etc/           mingw64/          unins000.exe*
+1techExprmnt/           git-bash.exe*  myshop/           unins000.msg
+2.JPG                   git-cmd.exe*   oldNewLists.html  usr/
+4.JPG                   gitcode/       Practice/         watch.html
+BBuckSourceTree2017/    gitjava/       proc/
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode/1USEthis2017Oct25/sqlmail
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/sqlmail (master)
+$ ls
+main.py     readme.txt       sqlmailemail2.html  templates/
+maingym.py  sqlmailbye.html  sqlmailhome.html
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/sqlmail (master)
+$ conda env list
+# conda environments:
+#
+env_flask                C:\Miniconda3\envs\env_flask
+envindia_flask           C:\Miniconda3\envs\envindia_flask
+hello-flask              C:\Miniconda3\envs\hello-flask
+helloflask               C:\Miniconda3\envs\helloflask
+root                  *  C:\Miniconda3
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/sqlmail (master)
+$ source activate env_flask
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/sqlmail (master)
+$ python maingym.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [11/Dec/2017 13:08:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:09:05] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:09:13] "GET /exerhours HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1997,
+ in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1985,
+ in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1540,
+ in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.py", line 3
+3, in reraise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1982,
+ in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1614,
+ in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1517,
+ in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.py", line 3
+3, in reraise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1612,
+ in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1598,
+ in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\1USEthis2017Oct25\sqlmail\maingym.py
+", line 14, in exerhours
+    return render_template("gymtimeaddList.html")
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\templating.py", lin
+e 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_lis
+t),
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\jinja2\environment.py", l
+ine 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\jinja2\environment.py", l
+ine 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\jinja2\environment.py", l
+ine 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\jinja2\loaders.py", line
+113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\templating.py", lin
+e 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\templating.py", lin
+e 85, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: gymtimeaddList.html
+127.0.0.1 - - [11/Dec/2017 13:09:14] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:09:14] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:09:14] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:09:14] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:09:14] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:10:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:10:29] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:10:37] "GET /exerhours HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1997,
+ in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1985,
+ in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1540,
+ in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.py", line 3
+3, in reraise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1982,
+ in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1614,
+ in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1517,
+ in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.py", line 3
+3, in reraise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1612,
+ in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1598,
+ in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\1USEthis2017Oct25\sqlmail\maingym.py
+", line 14, in exerhours
+    return render_template("gymtimeaddList.html")
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\templating.py", lin
+e 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_lis
+t),
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\jinja2\environment.py", l
+ine 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\jinja2\environment.py", l
+ine 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\jinja2\environment.py", l
+ine 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\jinja2\loaders.py", line
+113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\templating.py", lin
+e 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\templating.py", lin
+e 85, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: gymtimeaddList.html
+127.0.0.1 - - [11/Dec/2017 13:10:37] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:10:37] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:10:37] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:10:37] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:10:37] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=console.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\sqlmail\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [11/Dec/2017 13:11:36] "GET /exerhours HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1997,
+ in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1985,
+ in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1540,
+ in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.py", line 3
+3, in reraise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1982,
+ in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1614,
+ in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1517,
+ in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.py", line 3
+3, in reraise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1612,
+ in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1598,
+ in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\1USEthis2017Oct25\sqlmail\maingym.py
+", line 14, in exerhours
+    return render_template("sqlmiladdList.html")
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\templating.py", lin
+e 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_lis
+t),
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\jinja2\environment.py", l
+ine 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\jinja2\environment.py", l
+ine 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\jinja2\environment.py", l
+ine 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\jinja2\loaders.py", line
+113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\templating.py", lin
+e 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\templating.py", lin
+e 85, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: sqlmiladdList.html
+127.0.0.1 - - [11/Dec/2017 13:11:36] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:11:36] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:11:36] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:11:36] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:11:36] "GET /exerhours?__debugger__=yes&cmd=resour
+ce&f=console.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\sqlmail\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [11/Dec/2017 13:12:26] "GET /exerhours HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:12:26] "GET /sqlmailstyling/sqlmailstyle2.css HTTP
+/1.1" 404 -
+127.0.0.1 - - [11/Dec/2017 13:12:31] "GET /ipform?usrmail= HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:12:31] "GET /gymtimestyling/gymtimestyle2.css HTTP
+/1.1" 404 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\sqlmail\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\sqlmail\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [11/Dec/2017 13:27:03] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:29:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:30:04] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:31:34] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:31:42] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:32:26] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:32:49] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:33:23] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:33:42] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:34:29] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:35:01] "POST /email HTTP/1.1" 405 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\sqlmail\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [11/Dec/2017 13:36:19] "POST /email HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:36:24] "POST /email HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\sqlmail\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [11/Dec/2017 13:36:44] "POST /email HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:36:44] "GET /gymtimestyling/gymtimestyle2.css HTTP
+/1.1" 404 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\sqlmail\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\sqlmail\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\sqlmail\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [11/Dec/2017 13:39:06] "POST /email HTTP/1.1" 400 -
+127.0.0.1 - - [11/Dec/2017 13:39:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:39:53] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2017 13:40:08] "POST /email HTTP/1.1" 400 -
+127.0.0.1 - - [11/Dec/2017 13:42:05] "POST /email HTTP/1.1" 400 -
+127.0.0.1 - - [11/Dec/2017 13:42:13] "GET /email HTTP/1.1" 200 -
+Hannah
+127.0.0.1 - - [11/Dec/2017 13:42:29] "POST /email HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\sqlmail\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [11/Dec/2017 13:43:32] "GET /email HTTP/1.1" 200 -
+forProj
+hannahmoses612@gmail.com
+12
+127.0.0.1 - - [11/Dec/2017 13:43:43] "POST /email HTTP/1.1" 200 -
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/sqlmail (master)
+$ pip3 install --upgrade google-api-python-client
+Collecting google-api-python-client
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading google_api_python_client-1.6.4-py2.py3-none-any.whl (53kB)
+Collecting six<2dev,>=1.6.1 (from google-api-python-client)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading six-1.11.0-py2.py3-none-any.whl
+Collecting oauth2client<5.0.0dev,>=1.5.0 (from google-api-python-client)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading oauth2client-4.1.2-py2.py3-none-any.whl (99kB)
+Collecting httplib2<1dev,>=0.9.2 (from google-api-python-client)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading httplib2-0.10.3.tar.gz (204kB)
+Collecting uritemplate<4dev,>=3.0.0 (from google-api-python-client)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading uritemplate-3.0.0-py2.py3-none-any.whl
+Collecting rsa>=3.1.4 (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading rsa-3.4.2-py2.py3-none-any.whl (46kB)
+Collecting pyasn1>=0.1.7 (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading pyasn1-0.4.2-py2.py3-none-any.whl (71kB)
+Collecting pyasn1-modules>=0.0.5 (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading pyasn1_modules-0.2.1-py2.py3-none-any.whl (60kB)
+Building wheels for collected packages: httplib2
+  Running setup.py bdist_wheel for httplib2: started
+  Running setup.py bdist_wheel for httplib2: finished with status 'done'
+  Stored in directory: C:\Users\cody\AppData\Local\pip\Cache\wheels\ca\ac\5f\749651f7925b231103f5316cacca82a487810c22d30f011c0c
+Successfully built httplib2
+Installing collected packages: six, pyasn1, rsa, pyasn1-modules, httplib2, oauth2client, uritemplate, google-api-python-client
+Exception:
+Traceback (most recent call last):
+  File "c:\program files\python35\lib\site-packages\pip\basecommand.py", line 215, in main
+    status = self.run(options, args)
+  File "c:\program files\python35\lib\site-packages\pip\commands\install.py", line 342, in run
+    prefix=options.prefix_path,
+  File "c:\program files\python35\lib\site-packages\pip\req\req_set.py", line 784, in install
+    **kwargs
+  File "c:\program files\python35\lib\site-packages\pip\req\req_install.py", line 851, in install
+    self.move_wheel_files(self.source_dir, root=root, prefix=prefix)
+  File "c:\program files\python35\lib\site-packages\pip\req\req_install.py", line 1064, in move_wheel_files
+    isolated=self.isolated,
+  File "c:\program files\python35\lib\site-packages\pip\wheel.py", line 345, in move_wheel_files
+    clobber(source, lib_dir, True)
+  File "c:\program files\python35\lib\site-packages\pip\wheel.py", line 323, in clobber
+    shutil.copyfile(srcfile, destfile)
+  File "c:\program files\python35\lib\shutil.py", line 115, in copyfile
+    with open(dst, 'wb') as fdst:
+PermissionError: [Errno 13] Permission denied: 'c:\\program files\\python35\\Lib\\site-packages\\six.py'
+Cache entry deserialization failed, entry ignored
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/sqlmail (master)
+$ pip3 list
+DEPRECATION: The default format will switch to columns in the future. You can use --format=(legacy|columns) (or define a format=(legacy|columns) in your pip.conf under the [list] section) to disable this warning.
+pip (9.0.1)
+setuptools (20.10.1)
+virtualenv (15.1.0)
+wheel (0.29.0)
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/sqlmail (master)
+$ conda env list
+# conda environments:
+#
+env_flask             *  C:\Miniconda3\envs\env_flask
+envindia_flask           C:\Miniconda3\envs\envindia_flask
+hello-flask              C:\Miniconda3\envs\hello-flask
+helloflask               C:\Miniconda3\envs\helloflask
+root                     C:\Miniconda3
+
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/sqlmail (master)
+$
+
+
+

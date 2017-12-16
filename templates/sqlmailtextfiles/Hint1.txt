@@ -1,0 +1,40 @@
+
+
+6:50 AM 12/10/2017
+Git commands
+git status
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin 
+git push origin master
+
+CONDA
+coda env list
+source activate env_flask
+python main.py
+source deactivate
+exit
+
+
+
+
+
+
+
+
+=======+++++++============
+validation to ensure user-submotted data makes sense
+Not break our application
+user-friendly feedback
+
+Where is validation done ?
+1)Client side(browser)= easily by-passed by disabling JavaScript
+2)Server side (file we are writing our python code)
+
+HOW
+HTML input element attributions(type=email)
+JavaScript checks data before data is submitted
+
+Within reqeust handlers
+within model class
