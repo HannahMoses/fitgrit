@@ -1,0 +1,129 @@
+
+
+=======+++++++==============
+3:00 AM 12/16/2017
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode/fitgrit
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit
+$ ls
+fitgrithome.html  mainfitgrit.py  static/
+fitgritstart.py   readme.txt      templates/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit
+$ git init
+Initialized empty Git repository in C:/Users/cody/Downloads/Git/gitcode/fitgrit/.git/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/cody/Downloads/Git/gitcode/fitgrit/.git/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        fitgrithome.html
+        fitgritstart.py
+        mainfitgrit.py
+        readme.txt
+        static/
+        templates/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git add .
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git commit -m "2017Dec16 initial commit"
+[master (root-commit) 6dbc4ed] 2017Dec16 initial commit
+ 55 files changed, 2543 insertions(+)
+ create mode 100644 fitgrithome.html
+ create mode 100644 fitgritstart.py
+ create mode 100644 mainfitgrit.py
+ create mode 100644 readme.txt
+ create mode 100644 static/fitgritstyle1.css
+ create mode 100644 templates/fitgritaddList.html
+ create mode 100644 templates/fitgritimages/fitgritfront.JPG
+ create mode 100644 templates/fitgritstyling/fitgritstyle1.css
+ create mode 100644 templates/fitgritstyling/fitgritstyle2.css
+ create mode 100644 templates/form1.html
+ create mode 100644 templates/sqlmailimages/gymtimeaddListDOThtmNOTlRenderedThroughBrowser.JPG
+ create mode 100644 templates/sqlmailimages/gymtimeaddListDOThtml.JPG
+ create mode 100644 templates/sqlmailimages/gymtimeaddListDOThtmlRenderedThroughBrowser.JPG
+ create mode 100644 templates/sqlmailimages/sqlmailfront.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/1sqlmail/2.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/1sqlmail/2017Dec14a1.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/1sqlmail/3.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/1sqlmail/a2017Dec11.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/1sqlmail/mywork/1.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/1sqlmail/mywork/2.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/1sqlmail/mywork/3GoodSubmit.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/1sqlmail/mywork/4SUCCESStqlJesus.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/1sqlmail/mywork/5SUCCESSatHome4PM22Dec14ThutqlJesus.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/1sqlmail/mywork/AtHomeTest1.txt
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/1sqlmail/mywork/solu1.txt
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/2017Dec5gitbashCmd2TestPrintingOfTestMessageEveryTImeBrowserRendersFileWhenUserPressesSubmits.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/2017Dec5pm0152dIFFERENCEbtwGymtimeaddListIsNOTrenderedThroSERVERandRenderedThroFlaskAppSERVERGivesIndiaWorksDOThtmlFile.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/2017Dec5pm0152gymtimeaddListIsRenderedThrohtml file is being rendered THROUGH the flask application serverGivesIndiaWorksDOThtmlFile.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/HiFromIndiaDisplayedOnURLlocalhostCOLON5000slashindia.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/IndiaWorksTEMPLATEdisplayedOnURLlocalhostCOLON5000slashindia.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/ProcessingFORMSinFlask/a12017Dec5TutorialProcessingFormsInFlaskRendersEmptyForm.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/ProcessingFORMSinFlask/a2017Dec5TutorialProcessingFormsInFlask.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/ProcessingFORMSinFlask/a2017Dec6FlaskAppUsesdifferentBrowsersToRenderMyFileTutorialProcessingFormsInFlask.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/ProcessingFORMSinFlask/a2017Dec6KillingFlaskAppDisablesServerFromRenderingMyFileToBrowserTutorialProcessingFormsInFlask.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/ProcessingFORMSinFlask/a22017Dec6SUBMITbuttonGivenValueAndFlaskAppUsesdifferentBrowsersToRenderMyFileTutorialProcessingFormsInFlask.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/ProcessingFORMSinFlask/a32017Dec6WedHellohandlerHandlesReqSInceFOrmActionIsSPecifiedAsHello.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/ProcessingFORMSinFlask/a42017Dec6WedPOSTmethodUsedInREnderingFormTOBrowserByServerUsingFlskAppInPythonFile.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/ProcessingFORMSinFlask/unsuccessful/1.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/ProcessingFORMSinFlask/unsuccessful/a12017Dec6wedHellohandlerDoesNotHandleTheRequestMadeByBrowserToServer.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/ProcessingFORMSinFlask/unsuccessful/a22017Dec6wedFormActonNotSPecifiedSoHellohandlerDoesNotHandleTheRequestMadeByBrowserToServer.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/differenceBtwUsingServerAndNotUsingServer/2017Dec5pm0152DiffNOTrenderedThroSERVERandRenderedThroFlaskAppSERVERGivesIndiaWorksDOThtmlFile.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/differenceBtwUsingServerAndNotUsingServer/gymtime2017Dec7SubmitHTMLthroServerDIFFgymtimeaddListIsNOTrenderedThroSERVERandRenderedThroFlaskAp.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/differenceBtwUsingServerAndNotUsingServer/gymtime2017Dec7SubmitHTMLwithoutServerDIFFgymtimRenderedThroLocalNOTrenderedThroSERVERand.JPG
+ create mode 100644 templates/sqlmailimages/successSqlmailPics/gymtime2017Dec7SubmitDisplaysIpformHTMLwithoutServer.JPG
+ create mode 100644 templates/sqlmailstyling/sqlmailstyle1.css
+ create mode 100644 templates/sqlmailstyling/sqlmailstyle2.css
+ create mode 100644 templates/sqlmailtextfiles/1.txt
+ create mode 100644 templates/sqlmailtextfiles/2.txt
+ create mode 100644 templates/sqlmailtextfiles/2017Dec11.txt
+ create mode 100644 templates/sqlmailtextfiles/2017Dec14WorkedForSLASHemailNowCode4SLASHexerhours.txt
+ create mode 100644 templates/sqlmailtextfiles/Hint1.txt
+ create mode 100644 templates/sqlmailtextfiles/NewClientExerhours2.txt
+ create mode 100644 templates/sqlmailtextfiles/gitcmd2017Nov14Tuessendgymail1.txt
+ create mode 100644 templates/sqlmailtextfiles/gitcmd2017dec5TuesSentGymtimeaddlistDOThtmlTHROUGHbrowserUsingFlaskEnvironment.txt
+ create mode 100644 templates/sqlmailtextfiles/impInstallsqlmail/gitbash1India.txt
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git remote add origin https://github.com/HannahMoses/fitgrit.git
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git push origin master
+Counting objects: 65, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (62/62), done.
+Writing objects: 100% (65/65), 3.27 MiB | 391.00 KiB/s, done.
+Total 65 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/HannahMoses/fitgrit.git
+ * [new branch]      master -> master
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$
+
+===========++++++============3:01 AM 12/16/2017

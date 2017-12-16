@@ -1,5 +1,5 @@
 from flask import Flask, request,render_template,url_for
-from emailer import send_email
+#from emailer import send_email
 
 app = Flask(__name__)
 app.config['DEBUG'] = True#this reloads Flask app everytime I make changes to main.py
@@ -27,11 +27,11 @@ def email():
 def email_post():
     firstname= request.form["firstname"]
     email = request.form["email"]
-    exerhours=request.form["exerhours"]
+    exerhours=request.form["itgrithours"]
     print(firstname)
     print(email)
     print(exerhours)
-    send_email(email,firstname,exerhours)
+    send_email(email,firstname,fitgrithours)
     return render_template("fitgritaddList.html")
 
 app.run()
