@@ -9,15 +9,14 @@ body{color : rgb(30, 11, 1);
 h1{ text-align: center;
     color:rgb(175, 34, 15);
 }
-h2   {  color:pink;
-        background-color:rgb(120,20,5);
+h2   {  color:rgb(175, 34, 15);
         text-align:left;
      }
  pre { text-align:center;
             font-size :30px;
      	   color:rgb(204, 255, 255);
           }
-p    { text-align:center;
+p    { text-align:left;
        font-size :20px;
 	   font-weight:bold;
      }

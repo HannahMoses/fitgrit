@@ -1,0 +1,1615 @@
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode/fitgrit
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ ls
+fitgrithome.html  mainfitgrit.py  static/
+fitgritstart.py   readme.txt      templates/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pip install --upgrade google-api-python-client
+Requirement already up-to-date: google-api-python-client in c:\miniconte-packages
+Requirement already up-to-date: uritemplate<4dev,>=3.0.0 in c:\miniconte-packages (from google-api-python-client)
+Requirement already up-to-date: oauth2client<5.0.0dev,>=1.5.0 in c:\miib\site-packages (from google-api-python-client)
+Requirement already up-to-date: httplib2<1dev,>=0.9.2 in c:\miniconda3packages (from google-api-python-client)
+Requirement already up-to-date: six<2dev,>=1.6.1 in c:\miniconda3\lib\ges (from google-api-python-client)
+Requirement already up-to-date: pyasn1>=0.1.7 in c:\miniconda3\lib\sit (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: rsa>=3.1.4 in c:\miniconda3\lib\site-prom oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: pyasn1-modules>=0.0.5 in c:\miniconda3packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+Traceback (most recent call last):
+  File "FITGRITquickstart.py", line 73, in <module>
+    main()
+  File "FITGRITquickstart.py", line 61, in main
+    results = service.users().labels().list(userId='me').execute()
+  File "C:\Miniconda3\lib\site-packages\oauth2client\_helpers.py", lin
+positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\lib\site-packages\googleapiclient\http.py", line
+xecute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https
+gleapis.com/gmail/v1/users/me/labels?alt=json returned "Insufficient P
+>
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pip install --upgrade google-api-python-client
+Requirement already up-to-date: google-api-python-client in c:\miniconges
+Requirement already up-to-date: uritemplate<4dev,>=3.0.0 in c:\miniconges (from google-api-python-client)
+Requirement already up-to-date: oauth2client<5.0.0dev,>=1.5.0 in c:\mipackages (from google-api-python-client)
+Requirement already up-to-date: six<2dev,>=1.6.1 in c:\miniconda3\lib\m google-api-python-client)
+Requirement already up-to-date: httplib2<1dev,>=0.9.2 in c:\miniconda3 (from google-api-python-client)
+Requirement already up-to-date: pyasn1-modules>=0.0.5 in c:\miniconda3 (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: rsa>=3.1.4 in c:\miniconda3\lib\site-ph2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: pyasn1>=0.1.7 in c:\miniconda3\lib\sitauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+C:\Miniconda3\lib\site-packages\oauth2client\_helpers.py:255: UserWarn
+ C:\Users\cody\.credentials\gmail-python-FITGRITquickstart.json: No su
+ry
+  warnings.warn(_MISSING_FILE_MESSAGE.format(filename))
+Traceback (most recent call last):
+  File "C:\Miniconda3\lib\site-packages\oauth2client\clientsecrets.py"
+adfile
+    with open(filename, 'r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'client_secret
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "FITGRITquickstart.py", line 73, in <module>
+    main()
+  File "FITGRITquickstart.py", line 57, in main
+    credentials = get_credentials()
+  File "FITGRITquickstart.py", line 42, in get_credentials
+    flow = client.flow_from_clientsecrets(CLIENT_SECRET_FILE, SCOPES)
+  File "C:\Miniconda3\lib\site-packages\oauth2client\_helpers.py", lin
+al_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\lib\site-packages\oauth2client\client.py", line
+_clientsecrets
+    cache=cache)
+  File "C:\Miniconda3\lib\site-packages\oauth2client\clientsecrets.py"
+dfile
+    return _loadfile(filename)
+  File "C:\Miniconda3\lib\site-packages\oauth2client\clientsecrets.py"
+adfile
+    exc.strerror, exc.errno)
+oauth2client.clientsecrets.InvalidClientSecretsError: ('Error opening
+ret.json', 'No such file or directory', 2)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+C:\Miniconda3\lib\site-packages\oauth2client\_helpers.py:255: UserWarn
+ C:\Users\cody\.credentials\gmail-python-FITGRITquickstart.json: No su
+ry
+  warnings.warn(_MISSING_FILE_MESSAGE.format(filename))
+
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?client_id=205250507352-f
+ant56pncj3796.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Floc
+cope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.readonly&access_t
+se_type=code
+
+If your browser is on a different machine then exit and re-run this
+application with the command-line parameter
+
+  --noauth_local_webserver
+
+Authentication successful.
+Storing credentials to C:\Users\cody\.credentials\gmail-python-FITGRIT
+Labels:
+gdatastore
+CATEGORY_PERSONAL
+CATEGORY_SOCIAL
+CATEGORY_UPDATES
+CATEGORY_FORUMS
+CHAT
+SENT
+INBOX
+TRASH
+CATEGORY_PROMOTIONS
+DRAFT
+SPAM
+STARRED
+UNREAD
+IMPORTANT
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ conda env list
+# conda environments:
+#
+env_flask                C:\Miniconda3\envs\env_flask
+envindia_flask           C:\Miniconda3\envs\envindia_flask
+hello-flask              C:\Miniconda3\envs\hello-flask
+helloflask               C:\Miniconda3\envs\helloflask
+root                  *  C:\Miniconda3
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source activate env_flaask
+
+
+CondaEnvironmentNotFoundError: Could not find environment: env_flaask
+You can list all discoverable environments with `conda info --envs`.
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source activate env_flask
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 03:26:16] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:26:16] "GET /fitgritstyling/fitgritstyle
+4 -
+127.0.0.1 - - [17/Dec/2017 03:30:14] "POST /email HTTP/1.1" 400 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\fitgr
+', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 03:32:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:33:04] "POST /hello HTTP/1.1" 404 -
+127.0.0.1 - - [17/Dec/2017 03:33:15] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:33:15] "GET /fitgritstyling/fitgritstyle
+4 -
+TesterDec17Sun2017
+LCoder2016fall@gmail.com
+11
+127.0.0.1 - - [17/Dec/2017 03:33:33] "POST /email HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+ll__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+atch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\mainfitgrit.py", l
+ost
+    send_email(email,firstname,fitgrithours)
+NameError: name 'send_email' is not defined
+127.0.0.1 - - [17/Dec/2017 03:33:33] "GET /email?__debugger__=yes&cmd=
+ss HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:33:34] "GET /email?__debugger__=yes&cmd=
+js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:33:34] "GET /email?__debugger__=yes&cmd=
+r.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:33:34] "GET /email?__debugger__=yes&cmd=
+ttf HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:33:34] "GET /email?__debugger__=yes&cmd=
+.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\fitgr
+', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\fitgr
+', reloading
+ * Restarting with stat
+  File "mainfitgrit.py", line 26
+    return '<h1> Hello, ' + myfirstname +'<h1>'
+                                              ^
+IndentationError: unindent does not match any outer indentation level
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+  File "mainfitgrit.py", line 26
+    return '<h1> Hello, ' + myfirstname +'<h1>'
+                                              ^
+IndentationError: unindent does not match any outer indentation level
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+  File "mainfitgrit.py", line 26
+    return '<h1>'  myfirstname '<h1>'
+                                    ^
+IndentationError: unindent does not match any outer indentation level
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+  File "mainfitgrit.py", line 26
+    return ("Hello !"+ myfirstname +" !")
+                                        ^
+IndentationError: unindent does not match any outer indentation level
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 03:58:52] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:59:00] "POST /hello HTTP/1.1" 405 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\fitgr
+', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 04:00:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:00:12] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:03:40] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:05:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:05:06] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:05:18] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:05:18] "GET /fitgritstyling/fitgritstyle
+4 -
+Moses
+LCoder2016fall@gmail.com
+20
+127.0.0.1 - - [17/Dec/2017 04:07:35] "POST /email HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+ll__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+atch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\mainfitgrit.py", l
+ost
+    send_email(email,firstname,fitgrithours)
+NameError: name 'fitgrithours' is not defined
+127.0.0.1 - - [17/Dec/2017 04:07:35] "GET /email?__debugger__=yes&cmd=
+js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:07:35] "GET /email?__debugger__=yes&cmd=
+ss HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:07:35] "GET /email?__debugger__=yes&cmd=
+r.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:07:35] "GET /email?__debugger__=yes&cmd=
+ttf HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:07:35] "GET /email?__debugger__=yes&cmd=
+.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\fitgr
+', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 04:13:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:14:04] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:14:11] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:14:11] "GET /fitgritstyling/fitgritstyle
+4 -
+Moses
+LCoder2016fall@gmail.com
+127.0.0.1 - - [17/Dec/2017 04:14:24] "POST /email HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+ll__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+atch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\mainfitgrit.py", l
+ost
+    print(exerhours)
+NameError: name 'exerhours' is not defined
+127.0.0.1 - - [17/Dec/2017 04:14:24] "GET /email?__debugger__=yes&cmd=
+js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:14:24] "GET /email?__debugger__=yes&cmd=
+ss HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:14:24] "GET /email?__debugger__=yes&cmd=
+r.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:14:24] "GET /email?__debugger__=yes&cmd=
+ttf HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:14:24] "GET /email?__debugger__=yes&cmd=
+.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\fitgr
+', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\fitgr
+', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 04:17:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:18:05] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:18:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:18:51] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:18:57] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:18:57] "GET /fitgritstyling/fitgritstyle
+4 -
+Moses
+LCoder2016fall@gmail.com
+20
+127.0.0.1 - - [17/Dec/2017 04:19:47] "POST /email HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+ll__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+atch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\mainfitgrit.py", l
+ost
+    send_email(email,firstname,fitgrithours)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\fitgritemailer.py"
+_email
+    message = messages.send(userId='me', body=body).execute()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\_h
+33, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\googleapiclient
+2, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https
+com/gmail/v1/users/me/messages/send?alt=json returned "Insufficient Pe
+127.0.0.1 - - [17/Dec/2017 04:19:47] "GET /email?__debugger__=yes&cmd=
+ss HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:19:47] "GET /email?__debugger__=yes&cmd=
+js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:19:47] "GET /email?__debugger__=yes&cmd=
+r.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:19:47] "GET /email?__debugger__=yes&cmd=
+ttf HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:19:47] "GET /email?__debugger__=yes&cmd=
+.png HTTP/1.1" 200 -
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source deactivate
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ ls
+__pycache__/               FITGRITquickstart.py           static/
+FITGRITclient_secret.json  mainfitgrit.py                 templates/
+fitgritemailer.py          PrevFITGRITclient_secret.json
+fitgrithome.html           readme.txt
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pip install --upgrade google-api-python-client
+Requirement already up-to-date: google-api-python-client in c:\miniconges
+Requirement already up-to-date: uritemplate<4dev,>=3.0.0 in c:\miniconges (from google-api-python-client)
+Requirement already up-to-date: httplib2<1dev,>=0.9.2 in c:\miniconda3 (from google-api-python-client)
+Requirement already up-to-date: oauth2client<5.0.0dev,>=1.5.0 in c:\mipackages (from google-api-python-client)
+Requirement already up-to-date: six<2dev,>=1.6.1 in c:\miniconda3\lib\m google-api-python-client)
+Requirement already up-to-date: pyasn1-modules>=0.0.5 in c:\miniconda3 (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: pyasn1>=0.1.7 in c:\miniconda3\lib\sitauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: rsa>=3.1.4 in c:\miniconda3\lib\site-ph2client<5.0.0dev,>=1.5.0->google-api-python-client)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+Labels:
+gdatastore
+CATEGORY_PERSONAL
+CATEGORY_SOCIAL
+CATEGORY_UPDATES
+CATEGORY_FORUMS
+CHAT
+SENT
+INBOX
+TRASH
+CATEGORY_PROMOTIONS
+DRAFT
+SPAM
+STARRED
+UNREAD
+IMPORTANT
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ conda env list
+# conda environments:
+#
+env_flask                C:\Miniconda3\envs\env_flask
+envindia_flask           C:\Miniconda3\envs\envindia_flask
+hello-flask              C:\Miniconda3\envs\hello-flask
+helloflask               C:\Miniconda3\envs\helloflask
+root                  *  C:\Miniconda3
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source activate env_flask
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 05:16:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 05:16:37] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 05:19:48] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 05:19:48] "GET /fitgritstyling/fitgritstyle
+4 -
+Betty
+gapp2017falloct@gmail.com
+8
+127.0.0.1 - - [17/Dec/2017 05:30:21] "POST /email HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+ll__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+atch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\mainfitgrit.py", l
+ost
+    send_email(email,firstname,fitgrithours)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\fitgritemailer.py"
+_email
+    message = messages.send(userId='me', body=body).execute()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\_h
+33, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\googleapiclient
+2, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https
+com/gmail/v1/users/me/messages/send?alt=json returned "Insufficient Pe
+127.0.0.1 - - [17/Dec/2017 05:30:21] "GET /email?__debugger__=yes&cmd=
+ss HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 05:30:21] "GET /email?__debugger__=yes&cmd=
+r.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 05:30:21] "GET /email?__debugger__=yes&cmd=
+js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 05:30:21] "GET /email?__debugger__=yes&cmd=
+ttf HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 05:30:21] "GET /email?__debugger__=yes&cmd=
+.png HTTP/1.1" 200 -
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source deactivate
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ conda env list
+# conda environments:
+#
+env_flask                C:\Miniconda3\envs\env_flask
+envindia_flask           C:\Miniconda3\envs\envindia_flask
+hello-flask              C:\Miniconda3\envs\hello-flask
+helloflask               C:\Miniconda3\envs\helloflask
+root                  *  C:\Miniconda3
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source activate env_flask
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pyton mainfitgrit.py
+bash: pyton: command not found
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 06:26:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 06:26:12] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 06:26:19] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 06:26:19] "GET /fitgritstyling/fitgritstyle
+2.css HTTP/1.1" 404 -
+Anand
+gapp2017falloct@gmail.com
+100
+127.0.0.1 - - [17/Dec/2017 06:29:33] "POST /email HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+y", line 33, in reraise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+y", line 33, in reraise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\mainfitgrit.py", l
+ine 39, in email_post
+    send_email(email,firstname,fitgrithours)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\fitgritemailer.py"
+, line 41, in send_email
+    message = messages.send(userId='me', body=body).execute()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\_h
+elpers.py", line 133, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\googleapiclient
+\http.py", line 842, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https
+://www.googleapis.com/gmail/v1/users/me/messages/send?alt=json returne
+d "Insufficient Permission">
+127.0.0.1 - - [17/Dec/2017 06:29:33] "GET /email?__debugger__=yes&cmd=
+resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 06:29:33] "GET /email?__debugger__=yes&cmd=
+resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 06:29:33] "GET /email?__debugger__=yes&cmd=
+resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 06:29:34] "GET /email?__debugger__=yes&cmd=
+resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 06:29:34] "GET /email?__debugger__=yes&cmd=
+resource&f=console.png HTTP/1.1" 200 -
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source deactivate
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+Labels:
+gdatastore
+CATEGORY_PERSONAL
+CATEGORY_SOCIAL
+CATEGORY_UPDATES
+CATEGORY_FORUMS
+CHAT
+SENT
+INBOX
+TRASH
+CATEGORY_PROMOTIONS
+DRAFT
+SPAM
+STARRED
+UNREAD
+IMPORTANT
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pip install --upgrade google-api-python-client
+Requirement already up-to-date: google-api-python-client in c:\miniconda3\lib\site-packages
+Requirement already up-to-date: six<2dev,>=1.6.1 in c:\miniconda3\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: httplib2<1dev,>=0.9.2 in c:\miniconda3\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: oauth2client<5.0.0dev,>=1.5.0 in c:\miniconda3\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: uritemplate<4dev,>=3.0.0 in c:\miniconda3\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: pyasn1-modules>=0.0.5 in c:\miniconda3\lib\site-packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: rsa>=3.1.4 in c:\miniconda3\lib\site-packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: pyasn1>=0.1.7 in c:\miniconda3\lib\site-packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+Labels:
+gdatastore
+CATEGORY_PERSONAL
+CATEGORY_SOCIAL
+CATEGORY_UPDATES
+CATEGORY_FORUMS
+CHAT
+SENT
+INBOX
+TRASH
+CATEGORY_PROMOTIONS
+DRAFT
+SPAM
+STARRED
+UNREAD
+IMPORTANT
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source activate env_flask
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 06:44:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 06:44:33] "POST /hello HTTP/1.1" 200 -
+
+
+
+======++++++++===========
+6:19 AM 12/17/2017
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode/fitgrit
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ ls
+fitgrithome.html  mainfitgrit.py  static/
+fitgritstart.py   readme.txt      templates/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pip install --upgrade google-api-python-client
+Requirement already up-to-date: google-api-python-client in c:\miniconte-packages
+Requirement already up-to-date: uritemplate<4dev,>=3.0.0 in c:\miniconte-packages (from google-api-python-client)
+Requirement already up-to-date: oauth2client<5.0.0dev,>=1.5.0 in c:\miib\site-packages (from google-api-python-client)
+Requirement already up-to-date: httplib2<1dev,>=0.9.2 in c:\miniconda3packages (from google-api-python-client)
+Requirement already up-to-date: six<2dev,>=1.6.1 in c:\miniconda3\lib\ges (from google-api-python-client)
+Requirement already up-to-date: pyasn1>=0.1.7 in c:\miniconda3\lib\sit (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: rsa>=3.1.4 in c:\miniconda3\lib\site-prom oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: pyasn1-modules>=0.0.5 in c:\miniconda3packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+Traceback (most recent call last):
+  File "FITGRITquickstart.py", line 73, in <module>
+    main()
+  File "FITGRITquickstart.py", line 61, in main
+    results = service.users().labels().list(userId='me').execute()
+  File "C:\Miniconda3\lib\site-packages\oauth2client\_helpers.py", lin
+positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\lib\site-packages\googleapiclient\http.py", line
+xecute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https
+gleapis.com/gmail/v1/users/me/labels?alt=json returned "Insufficient P
+>
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pip install --upgrade google-api-python-client
+Requirement already up-to-date: google-api-python-client in c:\miniconges
+Requirement already up-to-date: uritemplate<4dev,>=3.0.0 in c:\miniconges (from google-api-python-client)
+Requirement already up-to-date: oauth2client<5.0.0dev,>=1.5.0 in c:\mipackages (from google-api-python-client)
+Requirement already up-to-date: six<2dev,>=1.6.1 in c:\miniconda3\lib\m google-api-python-client)
+Requirement already up-to-date: httplib2<1dev,>=0.9.2 in c:\miniconda3 (from google-api-python-client)
+Requirement already up-to-date: pyasn1-modules>=0.0.5 in c:\miniconda3 (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: rsa>=3.1.4 in c:\miniconda3\lib\site-ph2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: pyasn1>=0.1.7 in c:\miniconda3\lib\sitauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+C:\Miniconda3\lib\site-packages\oauth2client\_helpers.py:255: UserWarn
+ C:\Users\cody\.credentials\gmail-python-FITGRITquickstart.json: No su
+ry
+  warnings.warn(_MISSING_FILE_MESSAGE.format(filename))
+Traceback (most recent call last):
+  File "C:\Miniconda3\lib\site-packages\oauth2client\clientsecrets.py"
+adfile
+    with open(filename, 'r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'client_secret
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "FITGRITquickstart.py", line 73, in <module>
+    main()
+  File "FITGRITquickstart.py", line 57, in main
+    credentials = get_credentials()
+  File "FITGRITquickstart.py", line 42, in get_credentials
+    flow = client.flow_from_clientsecrets(CLIENT_SECRET_FILE, SCOPES)
+  File "C:\Miniconda3\lib\site-packages\oauth2client\_helpers.py", lin
+al_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\lib\site-packages\oauth2client\client.py", line
+_clientsecrets
+    cache=cache)
+  File "C:\Miniconda3\lib\site-packages\oauth2client\clientsecrets.py"
+dfile
+    return _loadfile(filename)
+  File "C:\Miniconda3\lib\site-packages\oauth2client\clientsecrets.py"
+adfile
+    exc.strerror, exc.errno)
+oauth2client.clientsecrets.InvalidClientSecretsError: ('Error opening
+ret.json', 'No such file or directory', 2)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+C:\Miniconda3\lib\site-packages\oauth2client\_helpers.py:255: UserWarn
+ C:\Users\cody\.credentials\gmail-python-FITGRITquickstart.json: No su
+ry
+  warnings.warn(_MISSING_FILE_MESSAGE.format(filename))
+
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?client_id=205250507352-f
+ant56pncj3796.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Floc
+cope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.readonly&access_t
+se_type=code
+
+If your browser is on a different machine then exit and re-run this
+application with the command-line parameter
+
+  --noauth_local_webserver
+
+Authentication successful.
+Storing credentials to C:\Users\cody\.credentials\gmail-python-FITGRIT
+Labels:
+gdatastore
+CATEGORY_PERSONAL
+CATEGORY_SOCIAL
+CATEGORY_UPDATES
+CATEGORY_FORUMS
+CHAT
+SENT
+INBOX
+TRASH
+CATEGORY_PROMOTIONS
+DRAFT
+SPAM
+STARRED
+UNREAD
+IMPORTANT
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ conda env list
+# conda environments:
+#
+env_flask                C:\Miniconda3\envs\env_flask
+envindia_flask           C:\Miniconda3\envs\envindia_flask
+hello-flask              C:\Miniconda3\envs\hello-flask
+helloflask               C:\Miniconda3\envs\helloflask
+root                  *  C:\Miniconda3
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source activate env_flaask
+
+
+CondaEnvironmentNotFoundError: Could not find environment: env_flaask
+You can list all discoverable environments with `conda info --envs`.
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source activate env_flask
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 03:26:16] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:26:16] "GET /fitgritstyling/fitgritstyle
+4 -
+127.0.0.1 - - [17/Dec/2017 03:30:14] "POST /email HTTP/1.1" 400 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\fitgr
+', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 03:32:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:33:04] "POST /hello HTTP/1.1" 404 -
+127.0.0.1 - - [17/Dec/2017 03:33:15] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:33:15] "GET /fitgritstyling/fitgritstyle
+4 -
+TesterDec17Sun2017
+LCoder2016fall@gmail.com
+11
+127.0.0.1 - - [17/Dec/2017 03:33:33] "POST /email HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+ll__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+atch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\mainfitgrit.py", l
+ost
+    send_email(email,firstname,fitgrithours)
+NameError: name 'send_email' is not defined
+127.0.0.1 - - [17/Dec/2017 03:33:33] "GET /email?__debugger__=yes&cmd=
+ss HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:33:34] "GET /email?__debugger__=yes&cmd=
+js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:33:34] "GET /email?__debugger__=yes&cmd=
+r.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:33:34] "GET /email?__debugger__=yes&cmd=
+ttf HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:33:34] "GET /email?__debugger__=yes&cmd=
+.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\fitgr
+', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\fitgr
+', reloading
+ * Restarting with stat
+  File "mainfitgrit.py", line 26
+    return '<h1> Hello, ' + myfirstname +'<h1>'
+                                              ^
+IndentationError: unindent does not match any outer indentation level
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+  File "mainfitgrit.py", line 26
+    return '<h1> Hello, ' + myfirstname +'<h1>'
+                                              ^
+IndentationError: unindent does not match any outer indentation level
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+  File "mainfitgrit.py", line 26
+    return '<h1>'  myfirstname '<h1>'
+                                    ^
+IndentationError: unindent does not match any outer indentation level
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+  File "mainfitgrit.py", line 26
+    return ("Hello !"+ myfirstname +" !")
+                                        ^
+IndentationError: unindent does not match any outer indentation level
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 03:58:52] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 03:59:00] "POST /hello HTTP/1.1" 405 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\fitgr
+', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 04:00:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:00:12] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:03:40] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:05:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:05:06] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:05:18] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:05:18] "GET /fitgritstyling/fitgritstyle
+4 -
+Moses
+LCoder2016fall@gmail.com
+20
+127.0.0.1 - - [17/Dec/2017 04:07:35] "POST /email HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+ll__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+atch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\mainfitgrit.py", l
+ost
+    send_email(email,firstname,fitgrithours)
+NameError: name 'fitgrithours' is not defined
+127.0.0.1 - - [17/Dec/2017 04:07:35] "GET /email?__debugger__=yes&cmd=
+js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:07:35] "GET /email?__debugger__=yes&cmd=
+ss HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:07:35] "GET /email?__debugger__=yes&cmd=
+r.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:07:35] "GET /email?__debugger__=yes&cmd=
+ttf HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:07:35] "GET /email?__debugger__=yes&cmd=
+.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\fitgr
+', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 04:13:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:14:04] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:14:11] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:14:11] "GET /fitgritstyling/fitgritstyle
+4 -
+Moses
+LCoder2016fall@gmail.com
+127.0.0.1 - - [17/Dec/2017 04:14:24] "POST /email HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+ll__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+atch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\mainfitgrit.py", l
+ost
+    print(exerhours)
+NameError: name 'exerhours' is not defined
+127.0.0.1 - - [17/Dec/2017 04:14:24] "GET /email?__debugger__=yes&cmd=
+js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:14:24] "GET /email?__debugger__=yes&cmd=
+ss HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:14:24] "GET /email?__debugger__=yes&cmd=
+r.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:14:24] "GET /email?__debugger__=yes&cmd=
+ttf HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:14:24] "GET /email?__debugger__=yes&cmd=
+.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\fitgr
+', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\fitgr
+', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 04:17:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:18:05] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:18:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:18:51] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:18:57] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:18:57] "GET /fitgritstyling/fitgritstyle
+4 -
+Moses
+LCoder2016fall@gmail.com
+20
+127.0.0.1 - - [17/Dec/2017 04:19:47] "POST /email HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+ll__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+atch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\mainfitgrit.py", l
+ost
+    send_email(email,firstname,fitgrithours)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\fitgritemailer.py"
+_email
+    message = messages.send(userId='me', body=body).execute()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\_h
+33, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\googleapiclient
+2, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https
+com/gmail/v1/users/me/messages/send?alt=json returned "Insufficient Pe
+127.0.0.1 - - [17/Dec/2017 04:19:47] "GET /email?__debugger__=yes&cmd=
+ss HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:19:47] "GET /email?__debugger__=yes&cmd=
+js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:19:47] "GET /email?__debugger__=yes&cmd=
+r.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:19:47] "GET /email?__debugger__=yes&cmd=
+ttf HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 04:19:47] "GET /email?__debugger__=yes&cmd=
+.png HTTP/1.1" 200 -
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source deactivate
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ ls
+__pycache__/               FITGRITquickstart.py           static/
+FITGRITclient_secret.json  mainfitgrit.py                 templates/
+fitgritemailer.py          PrevFITGRITclient_secret.json
+fitgrithome.html           readme.txt
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pip install --upgrade google-api-python-client
+Requirement already up-to-date: google-api-python-client in c:\miniconges
+Requirement already up-to-date: uritemplate<4dev,>=3.0.0 in c:\miniconges (from google-api-python-client)
+Requirement already up-to-date: httplib2<1dev,>=0.9.2 in c:\miniconda3 (from google-api-python-client)
+Requirement already up-to-date: oauth2client<5.0.0dev,>=1.5.0 in c:\mipackages (from google-api-python-client)
+Requirement already up-to-date: six<2dev,>=1.6.1 in c:\miniconda3\lib\m google-api-python-client)
+Requirement already up-to-date: pyasn1-modules>=0.0.5 in c:\miniconda3 (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: pyasn1>=0.1.7 in c:\miniconda3\lib\sitauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: rsa>=3.1.4 in c:\miniconda3\lib\site-ph2client<5.0.0dev,>=1.5.0->google-api-python-client)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+Labels:
+gdatastore
+CATEGORY_PERSONAL
+CATEGORY_SOCIAL
+CATEGORY_UPDATES
+CATEGORY_FORUMS
+CHAT
+SENT
+INBOX
+TRASH
+CATEGORY_PROMOTIONS
+DRAFT
+SPAM
+STARRED
+UNREAD
+IMPORTANT
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ conda env list
+# conda environments:
+#
+env_flask                C:\Miniconda3\envs\env_flask
+envindia_flask           C:\Miniconda3\envs\envindia_flask
+hello-flask              C:\Miniconda3\envs\hello-flask
+helloflask               C:\Miniconda3\envs\helloflask
+root                  *  C:\Miniconda3
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source activate env_flask
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [17/Dec/2017 05:16:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 05:16:37] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 05:19:48] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 05:19:48] "GET /fitgritstyling/fitgritstyle
+4 -
+Betty
+gapp2017falloct@gmail.com
+8
+127.0.0.1 - - [17/Dec/2017 05:30:21] "POST /email HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+ll__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+le_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.p
+raise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py",
+atch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\mainfitgrit.py", l
+ost
+    send_email(email,firstname,fitgrithours)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\fitgritemailer.py"
+_email
+    message = messages.send(userId='me', body=body).execute()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\_h
+33, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\googleapiclient
+2, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https
+com/gmail/v1/users/me/messages/send?alt=json returned "Insufficient Pe
+127.0.0.1 - - [17/Dec/2017 05:30:21] "GET /email?__debugger__=yes&cmd=
+ss HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 05:30:21] "GET /email?__debugger__=yes&cmd=
+r.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 05:30:21] "GET /email?__debugger__=yes&cmd=
+js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 05:30:21] "GET /email?__debugger__=yes&cmd=
+ttf HTTP/1.1" 200 -
+127.0.0.1 - - [17/Dec/2017 05:30:21] "GET /email?__debugger__=yes&cmd=
+.png HTTP/1.1" 200 -
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source deactivate
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ conda env list
+# conda environments:
+#
+env_flask                C:\Miniconda3\envs\env_flask
+envindia_flask           C:\Miniconda3\envs\envindia_flask
+hello-flask              C:\Miniconda3\envs\hello-flask
+helloflask               C:\Miniconda3\envs\helloflask
+root                  *  C:\Miniconda3
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source activate env_flask
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pyton mainfitgrit.py
+bash: pyton: command not found
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+
+
+
+
+======+++++++++++====
+BUT FAILED to send email due to
+insufficient permissions SO DELETED QUICKSTART.JASON
+fron .credentials FOLDER.
+SUCCESSFULLY authenticated the Gmail API application
+named '2017decfitgrit' to access the labels and contents
+of the email account,'gapp2017falloct@gmail.com'.
+Now my website 'fitgrit' can send email to User's email
+account from gapp2017falloct using Flask framework coded into
+mainfitgrit.py
+3:21 AM 12/17/2017 Sunday
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode/fitgrit
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ ls
+fitgrithome.html  mainfitgrit.py  static/
+fitgritstart.py   readme.txt      templates/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pip install --upgrade google-api-python-client
+Requirement already up-to-date: google-api-python-client in c:\miniconda3\lib\si        te-packages
+Requirement already up-to-date: uritemplate<4dev,>=3.0.0 in c:\miniconda3\lib\si        te-packages (from google-api-python-client)
+Requirement already up-to-date: oauth2client<5.0.0dev,>=1.5.0 in c:\miniconda3\l        ib\site-packages (from google-api-python-client)
+Requirement already up-to-date: httplib2<1dev,>=0.9.2 in c:\miniconda3\lib\site-        packages (from google-api-python-client)
+Requirement already up-to-date: six<2dev,>=1.6.1 in c:\miniconda3\lib\site-packa        ges (from google-api-python-client)
+Requirement already up-to-date: pyasn1>=0.1.7 in c:\miniconda3\lib\site-packages         (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: rsa>=3.1.4 in c:\miniconda3\lib\site-packages (f        rom oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: pyasn1-modules>=0.0.5 in c:\miniconda3\lib\site-        packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+Traceback (most recent call last):
+  File "FITGRITquickstart.py", line 73, in <module>
+    main()
+  File "FITGRITquickstart.py", line 61, in main
+    results = service.users().labels().list(userId='me').execute()
+  File "C:\Miniconda3\lib\site-packages\oauth2client\_helpers.py", line 133, in
+positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\lib\site-packages\googleapiclient\http.py", line 842, in e
+xecute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://www.goo
+gleapis.com/gmail/v1/users/me/labels?alt=json returned "Insufficient Permission"
+>
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pip install --upgrade google-api-python-client
+Requirement already up-to-date: google-api-python-client in c:\miniconda3\lib\site-packages
+Requirement already up-to-date: uritemplate<4dev,>=3.0.0 in c:\miniconda3\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: oauth2client<5.0.0dev,>=1.5.0 in c:\miniconda3\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: six<2dev,>=1.6.1 in c:\miniconda3\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: httplib2<1dev,>=0.9.2 in c:\miniconda3\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: pyasn1-modules>=0.0.5 in c:\miniconda3\lib\site-packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: rsa>=3.1.4 in c:\miniconda3\lib\site-packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: pyasn1>=0.1.7 in c:\miniconda3\lib\site-packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+C:\Miniconda3\lib\site-packages\oauth2client\_helpers.py:255: UserWarning: Cannot access
+ C:\Users\cody\.credentials\gmail-python-FITGRITquickstart.json: No such file or directo
+ry
+  warnings.warn(_MISSING_FILE_MESSAGE.format(filename))
+Traceback (most recent call last):
+  File "C:\Miniconda3\lib\site-packages\oauth2client\clientsecrets.py", line 121, in _lo
+adfile
+    with open(filename, 'r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'client_secret.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "FITGRITquickstart.py", line 73, in <module>
+    main()
+  File "FITGRITquickstart.py", line 57, in main
+    credentials = get_credentials()
+  File "FITGRITquickstart.py", line 42, in get_credentials
+    flow = client.flow_from_clientsecrets(CLIENT_SECRET_FILE, SCOPES)
+  File "C:\Miniconda3\lib\site-packages\oauth2client\_helpers.py", line 133, in position
+al_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\lib\site-packages\oauth2client\client.py", line 2135, in flow_from
+_clientsecrets
+    cache=cache)
+  File "C:\Miniconda3\lib\site-packages\oauth2client\clientsecrets.py", line 165, in loa
+dfile
+    return _loadfile(filename)
+  File "C:\Miniconda3\lib\site-packages\oauth2client\clientsecrets.py", line 125, in _lo
+adfile
+    exc.strerror, exc.errno)
+oauth2client.clientsecrets.InvalidClientSecretsError: ('Error opening file', 'client_sec
+ret.json', 'No such file or directory', 2)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+C:\Miniconda3\lib\site-packages\oauth2client\_helpers.py:255: UserWarning: Cannot access
+ C:\Users\cody\.credentials\gmail-python-FITGRITquickstart.json: No such file or directo
+ry
+  warnings.warn(_MISSING_FILE_MESSAGE.format(filename))
+
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?client_id=205250507352-fmjj262d51fuae05cq6
+ant56pncj3796.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2F&s
+cope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.readonly&access_type=offline&respon
+se_type=code
+
+If your browser is on a different machine then exit and re-run this
+application with the command-line parameter
+
+  --noauth_local_webserver
+
+Authentication successful.
+Storing credentials to C:\Users\cody\.credentials\gmail-python-FITGRITquickstart.json
+Labels:
+gdatastore
+CATEGORY_PERSONAL
+CATEGORY_SOCIAL
+CATEGORY_UPDATES
+CATEGORY_FORUMS
+CHAT
+SENT
+INBOX
+TRASH
+CATEGORY_PROMOTIONS
+DRAFT
+SPAM
+STARRED
+UNREAD
+IMPORTANT
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$
+
+
+==================++++++++++++++=
+1:42 AM 12/17/2017 Sunday
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode/fitgrit
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ ls
+fitgrithome.html  mainfitgrit.py  static/
+fitgritstart.py   readme.txt      templates/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pip install --upgrade google-api-python-client
+Requirement already up-to-date: google-api-python-client in c:\miniconda3\lib\si        te-packages
+Requirement already up-to-date: uritemplate<4dev,>=3.0.0 in c:\miniconda3\lib\si        te-packages (from google-api-python-client)
+Requirement already up-to-date: oauth2client<5.0.0dev,>=1.5.0 in c:\miniconda3\l        ib\site-packages (from google-api-python-client)
+Requirement already up-to-date: httplib2<1dev,>=0.9.2 in c:\miniconda3\lib\site-        packages (from google-api-python-client)
+Requirement already up-to-date: six<2dev,>=1.6.1 in c:\miniconda3\lib\site-packa        ges (from google-api-python-client)
+Requirement already up-to-date: pyasn1>=0.1.7 in c:\miniconda3\lib\site-packages         (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: rsa>=3.1.4 in c:\miniconda3\lib\site-packages (f        rom oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: pyasn1-modules>=0.0.5 in c:\miniconda3\lib\site-        packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+Traceback (most recent call last):
+  File "FITGRITquickstart.py", line 73, in <module>
+    main()
+  File "FITGRITquickstart.py", line 61, in main
+    results = service.users().labels().list(userId='me').execute()
+  File "C:\Miniconda3\lib\site-packages\oauth2client\_helpers.py", line 133, in
+positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\lib\site-packages\googleapiclient\http.py", line 842, in e
+xecute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://www.goo
+gleapis.com/gmail/v1/users/me/labels?alt=json returned "Insufficient Permission"
+>
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pip install --upgrade google-api-python-client
+Requirement already up-to-date: google-api-python-client in c:\miniconda3\lib\site-packages
+Requirement already up-to-date: uritemplate<4dev,>=3.0.0 in c:\miniconda3\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: oauth2client<5.0.0dev,>=1.5.0 in c:\miniconda3\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: six<2dev,>=1.6.1 in c:\miniconda3\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: httplib2<1dev,>=0.9.2 in c:\miniconda3\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: pyasn1-modules>=0.0.5 in c:\miniconda3\lib\site-packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: rsa>=3.1.4 in c:\miniconda3\lib\site-packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: pyasn1>=0.1.7 in c:\miniconda3\lib\site-packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$
+
+
+
+
+
+=======++++++++++====
+FAILED INSTALLATION OF fitgrit project as,Gmail API project - since I had renemed Gmail API Quickstart as
+fitgrit Gmail API Quickstart
+12:17 AM 12/17/2017
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode/fitgrit
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ ls
+fitgrithome.html  mainfitgrit.py  static/
+fitgritstart.py   readme.txt      templates/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pip install --upgrade google-api-python-client
+Requirement already up-to-date: google-api-python-client in c:\miniconda3\lib\si        te-packages
+Requirement already up-to-date: uritemplate<4dev,>=3.0.0 in c:\miniconda3\lib\si        te-packages (from google-api-python-client)
+Requirement already up-to-date: oauth2client<5.0.0dev,>=1.5.0 in c:\miniconda3\l        ib\site-packages (from google-api-python-client)
+Requirement already up-to-date: httplib2<1dev,>=0.9.2 in c:\miniconda3\lib\site-        packages (from google-api-python-client)
+Requirement already up-to-date: six<2dev,>=1.6.1 in c:\miniconda3\lib\site-packa        ges (from google-api-python-client)
+Requirement already up-to-date: pyasn1>=0.1.7 in c:\miniconda3\lib\site-packages         (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: rsa>=3.1.4 in c:\miniconda3\lib\site-packages (f        rom oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: pyasn1-modules>=0.0.5 in c:\miniconda3\lib\site-        packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+Traceback (most recent call last):
+  File "FITGRITquickstart.py", line 73, in <module>
+    main()
+  File "FITGRITquickstart.py", line 61, in main
+    results = service.users().labels().list(userId='me').execute()
+  File "C:\Miniconda3\lib\site-packages\oauth2client\_helpers.py", line 133, in
+positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\lib\site-packages\googleapiclient\http.py", line 842, in e
+xecute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://www.goo
+gleapis.com/gmail/v1/users/me/labels?alt=json returned "Insufficient Permission"
+>
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$
+
+
+
+=========++++===========
+
+===========++++++++++========

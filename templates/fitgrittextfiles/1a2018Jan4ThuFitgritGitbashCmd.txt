@@ -1,0 +1,61 @@
+11:59 AM 1/4/2018
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode
+$ ls
+1BrowserJavaScriptLC101Unit3DOT2.txt  dontUse/        JSstudios/  proj1/
+1JavaScriptLC101Unit3DOT2.txt         fitgrit/        LC101/      proj2/
+1MPMeditedUSEthis2017Oct25/           frontend/       MyJS/
+1USEthis2017Oct25/                    gmail_project/  MyPHP/
+2Myexpts1a2017Nov/                    JS2017/         myshop2/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode
+$ cd fitgrit
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ ls
+__pycache__/                Prev2FITGRITclient_secret.json
+1FITGRITclient_secret.json  PrevFITGRITclient_secret.json
+1FITGRITquickstart.py       Prevfitgritemailer.py
+FITGRITclient_secret.json   PrevFITGRITquickstart.py
+fitgritemailer.py           readme.txt
+fitgrithome.html            static/
+FITGRITquickstart.py        templates/
+mainfitgrit.py
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source activate env_flask
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [04/Jan/2018 11:54:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 11:54:13] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 11:54:20] "GET /exerhours HTTP/1.1" 404 -
+127.0.0.1 - - [04/Jan/2018 11:55:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 11:55:06] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 11:55:12] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 11:55:12] "GET /fitgritstyling/fitgritstyle2.css HTTP
+/1.1" 404 -
+David
+gapp2017fallOct@gmail.com
+19
+
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?client_id=1021640295565-104dsi6muk
+s2prjf50hr5o4klo5a97vo.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Floca
+lhost%3A8080%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.send&acces
+s_type=offline&response_type=code
+
+If your browser is on a different machine then exit and re-run this
+application with the command-line parameter
+
+  --noauth_local_webserver
+
+

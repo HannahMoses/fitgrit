@@ -1,0 +1,33 @@
+2017 Dec 11 Mon Failed to send email
+since I had used quickstart.py with another 
+gmail account 
+
+console .google
+
+Unchange sqlmail client_secret to
+
+client_secret 
+............
+TYPE IN URL bar
+console.google 
+................
+SET Product name to 
+exerhours
+
+............
+
+OAuthClient ID
+click Other
+Change name to exerhours
+Create
+
+...........
+
+Download and overwrite .json file previously created
+Drag it to sqlmail project folder
+Rename it as client_secret.json
+.........
+Rerun our project by ^C
+python mainsqlmail.py
+
+

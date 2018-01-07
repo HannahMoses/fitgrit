@@ -2,11 +2,11 @@
 <! DOCTYPE html>
 <html>
 <head><title> EDIT PERSONAL TRAINING JOURNAL </title>
-<link rel="stylesheet" href="fitgritstyling/fitgritstyle1.css">
+<!--<link rel="stylesheet" href="fitgritstyling/fitgritstyle2.css">-->
 
-<!--
+
 <link href=" {{ url_for('static', filename='fitgritstyle1.css')}}" rel="stylesheet">
--->
+
  </head>
 <body>
     <h1> My  fitness training Journal  </h1>
@@ -26,12 +26,24 @@ function myFunction() {
         document.getElementById("newlist").innerHTML="Newly added Fit grit hours are :  ";
         document.getElementById("done").innerHTML = ExerciseHours;
     }
+    function totaldone(){
+        document.getElementById("totallist").innerHTML="Total Fit grit hours are :  ";
+        document.getElementById("totalFGhours").innerHTML = ExerciseHours;
+
+    }
+    function printFGhrs(){
+        print ("Prints total here.")
+    }
 document.getElementById("mylist").innerHTML = ExerciseHours;
 </script> <p>Do you want to add more Fit grit hours? </p>
-<button class="button" onclick="myFunction()">Add more Fit grit hours</button><br><br>
+<button class="button" onclick="myFunction()">Add more Fit grit hours</button>
+<button class="button" onclick="itemsdone()">No more Fit grit hours</button>
+<button class="button" onclick="totaldone()">Total Fit grit hours</button>
 <p id="newlist"></p>
-<p id="done"> </p>
-<button class="button" onclick="itemsdone()">No more Fit grit hours</button><br><br>
+<p id="done"></p>
+<p id="totallist"></p>
+<p id="totalFGhours"></p>
+<button class="button" onclick="printFGhrs()">Print Fit grit hours</button>
 <div>
     <p8>To mail Fit grit hours to your email account,<br> enter your email below:</p8>
 
@@ -45,11 +57,7 @@ document.getElementById("mylist").innerHTML = ExerciseHours;
           <input type="submit" value="Submit" >
       </form>
   </p7>
-        <script>
-
-        }
-        </script>
-        <p1>Please enter correct email address ! </p1>
+        <p1>Please enter your correct email address ! </p1>
     </div>
 </body>
 </html>

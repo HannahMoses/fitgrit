@@ -1,5 +1,5 @@
 from flask import Flask, request,render_template,url_for
-#from emailer import send_email
+from fitgritemailer import send_email
 
 app = Flask(__name__)
 app.config['DEBUG'] = True#this reloads Flask app everytime I make changes to main.py
@@ -20,6 +20,11 @@ form = """
 @app.route("/")
 def index():
     return form
+@app.route("/hello",methods=["POST"])
+def hello():
+    myfirstname = request.form['myfirstname']
+    return '<h1> Hello, ' + myfirstname +'<h1>'
+
 @app.route("/email",methods=["GET"])
 def email():
     return render_template("fitgritaddList.html")
@@ -27,10 +32,10 @@ def email():
 def email_post():
     firstname= request.form["firstname"]
     email = request.form["email"]
-    exerhours=request.form["itgrithours"]
+    fitgrithours=request.form["fitgrithours"]
     print(firstname)
     print(email)
-    print(exerhours)
+    print(fitgrithours)
     send_email(email,firstname,fitgrithours)
     return render_template("fitgritaddList.html")
 

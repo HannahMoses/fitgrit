@@ -1,0 +1,126 @@
+
+cd . takes command back one previous step(folder)
+cd takes command back all the way to root directory
+1:23 PM 12/14/2017 -CEM MrPaul David Matthews
+
+
+
+==========+++++=========
+2017 Dec 14 THu SUCCESS in sending email
+In URL bar 127:/email
+
+Didn't work before so it wouldn't work now
+Displays message : INSUFFICIENT PERMISSION
+since I had used quickstart.py with another 
+gmail account 
+
+Gmail app writes THE OTHER EMAIL ACCOUNT
+into the .credentials file when I had used myshop2
+project.
+So our new gmail account has no authentication permission to access our .py file in our new current 
+project sqlmail.
+
+
+So change into .credentials folder,
+REMOVE the name of other gmail account from
+.credentials file .
+DELETE the old .credentials file
+PUT IN NEW name for .credentials file.
+           OR
+name credentials file as a diff name
+change in application_name
+to save multiple credentials saved on my computer
+once adn do NOT have to wipe the previous one(credential) out, in order to use a new gmail app
+in a different project.
+  for eg :
+  gmail -python quickstart
+  gmail - python update email
+..............
+Go to Gitbash
+^c
+cd
+ls -a
+cd .credentials
+ls -a
+gmail python quickstart
+rm gmail *
+cd
+CHANGE INTO LOCATION OF sqlmail PROJECT
+..........
+open Authentication screen
+C:\Users\cody
+.........
+ls
+cd cody
+ls
+cd Downloads
+cd Git
+cd gitcode
+cd 1USEthis2017oct25
+cd sqlmail
+............
+ls
+python maingym.py
+
+OPEN IT UP
+send email SUBMIT
+enter
+
+SIGN IN TO THE GMAIL ACCOUNT WITH THE CREDENTIALS
+ie, gapp2017falloct@gmail.com
+DISPLAYS SCREEN ASKING PERMISSION
+Click ALLOW
+
+COPY ERROR :- https://
+PASTE IT IN URL bar
+CLICK enable
+
+wait for sometime for gmail to propagate the action
+
+PASTE IN URL bar  of browser
+http://127.0.0.1:5000/
+TO SEND EMAIL TO USER'S EMAIL ACCOUNT
+PASTE IN URL bar  of browser
+http://127.0.0.1:5000/email
+BROWSER DISPLAYS MY WEBPAGE WITH EMAIL FORM
+Enter the user's email
+in my web page
+Press Submit
+TQLJesus
+
+
+
+=========+++++===========
+2017 Dec 11 Mon Failed to send email
+since I had used quickstart.py with another 
+gmail account 
+
+console .google
+
+Unchange sqlmail client_secret to
+
+client_secret 
+............
+TYPE IN URL bar
+console.google 
+................
+SET Product name to 
+exerhours
+
+............
+
+OAuthClient ID
+click Other
+Change name to exerhours
+Create
+
+...........
+
+Download and overwrite .json file previously created
+Drag it to sqlmail project folder
+Rename it as client_secret.json
+.........
+Rerun our project by ^C
+python mainsqlmail.py
+
+

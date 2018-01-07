@@ -1,0 +1,327 @@
+
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ ls
+1.JPG                   bin/           H2K2017/          ReleaseNotes.html
+1index/                 cmd/           kidsDwnld/        TA2017LC101/
+1myshopCodeTextFiles/   dev/           LICENSE.txt       tmp/
+1myshopGitCommands.txt  dontUseNow/    microblog/        unins000.dat
+1PrepInterv/            etc/           mingw64/          unins000.exe*
+1techExprmnt/           git-bash.exe*  myshop/           unins000.msg
+2.JPG                   git-cmd.exe*   oldNewLists.html  usr/
+4.JPG                   gitcode/       Practice/         watch.html
+BBuckSourceTree2017/    gitjava/       proc/
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode
+$ ls
+1BrowserJavaScriptLC101Unit3DOT2.txt  dontUse/        JSstudios/  proj1/
+1JavaScriptLC101Unit3DOT2.txt         fitgrit/        LC101/      proj2/
+1MPMeditedUSEthis2017Oct25/           frontend/       MyJS/
+1USEthis2017Oct25/                    gmail_project/  MyPHP/
+2Myexpts1a2017Nov/                    JS2017/         myshop2/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode
+$ cd fitgrit
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ ls
+__pycache__/               mainfitgrit.py                  readme.txt
+FITGRITclient_secret.json  Prev2FITGRITclient_secret.json  static/
+fitgritemailer.py          PrevFITGRITclient_secret.json   templates/
+fitgrithome.html           Prevfitgritemailer.py
+FITGRITquickstart.py       PrevFITGRITquickstart.py
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ conda env list
+# conda environments:
+#
+env_flask                C:\Miniconda3\envs\env_flask
+envindia_flask           C:\Miniconda3\envs\envindia_flask
+hello-flask              C:\Miniconda3\envs\hello-flask
+helloflask               C:\Miniconda3\envs\helloflask
+root                  *  C:\Miniconda3
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source activate env_flask
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ mainfitgrit.py
+bash: mainfitgrit.py: command not found
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [04/Jan/2018 10:34:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:34:58] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:35:06] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:35:06] "GET /fitgritstyling/fitgritstyle2.css
+David
+gapp2017fallOct@gmail.com
+12
+C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\_helpers.py:255
+s\cody\.credentials\gmail-python-FITGRITquickstart.json: No such file or di
+  warnings.warn(_MISSING_FILE_MESSAGE.format(filename))
+
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?client_id=779115434219-krl3jg
+leusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2F&scope=https
+Fgmail.send&access_type=offline&response_type=code
+
+If your browser is on a different machine then exit and re-run this
+application with the command-line parameter
+
+  --noauth_local_webserver
+
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [04/Jan/2018 10:46:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:46:49] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:49:37] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:49:37] "GET /fitgritstyling/fitgritstyle2.css
+David
+gapp2017fallOct@gmail.com
+16
+127.0.0.1 - - [04/Jan/2018 10:50:00] "POST /email HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.py", l
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.py", l
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\mainfitgrit.py", line 3
+    send_email(email,firstname,fitgrithours)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\fitgritemailer.py", lin
+e 41, in send_email
+    message = messages.send(userId='me', body=body).execute()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\_helper
+s.py", line 133, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\googleapiclient\http
+.py", line 837, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\googleapiclient\http
+.py", line 163, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\transpo
+rt.py", line 186, in new_request
+    credentials._refresh(orig_request_method)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\client.
+py", line 761, in _refresh
+    self._do_refresh_request(http)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\client.
+py", line 819, in _do_refresh_request
+    raise HttpAccessTokenRefreshError(error_msg, status=resp.status)
+oauth2client.client.HttpAccessTokenRefreshError: deleted_client: The OAuth
+client was deleted.
+127.0.0.1 - - [04/Jan/2018 10:50:00] "GET /email?__debugger__=yes&cmd=resou
+rce&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:50:00] "GET /email?__debugger__=yes&cmd=resou
+rce&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:50:00] "GET /email?__debugger__=yes&cmd=resou
+rce&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:50:00] "GET /email?__debugger__=yes&cmd=resou
+rce&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:50:00] "GET /email?__debugger__=yes&cmd=resou
+rce&f=console.png HTTP/1.1" 200 -
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ pip install --upgrade google-api-python-client
+Requirement already up-to-date: google-api-python-client in c:\miniconda3\envs\env_flask\lib\site-packages
+Requirement already up-to-date: six<2dev,>=1.6.1 in c:\miniconda3\envs\env_flask\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: oauth2client<5.0.0dev,>=1.5.0 in c:\miniconda3\envs\env_flask\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: httplib2<1dev,>=0.9.2 in c:\miniconda3\envs\env_flask\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: uritemplate<4dev,>=3.0.0 in c:\miniconda3\envs\env_flask\lib\site-packages (from google-api-python-client)
+Requirement already up-to-date: pyasn1-modules>=0.0.5 in c:\miniconda3\envs\env_flask\lib\site-packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: rsa>=3.1.4 in c:\miniconda3\envs\env_flask\lib\site-packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+Requirement already up-to-date: pyasn1>=0.1.7 in c:\miniconda3\envs\env_flask\lib\site-packages (from oauth2client<5.0.0dev,>=1.5.0->google-api-python-client)
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python FITGRITquickstart.py
+
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?client_id=1021640295565-104ds
+i6muks2prjf50hr5o4klo5a97vo.apps.googleusercontent.com&redirect_uri=http%3A
+%2F%2Flocalhost%3A8080%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fg
+mail.readonly&access_type=offline&response_type=code
+
+If your browser is on a different machine then exit and re-run this
+application with the command-line parameter
+
+  --noauth_local_webserver
+
+
+
+==========+================
+10:50 AM 1/4/2018
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ ls
+1.JPG                   bin/           H2K2017/          ReleaseNotes.html
+1index/                 cmd/           kidsDwnld/        TA2017LC101/
+1myshopCodeTextFiles/   dev/           LICENSE.txt       tmp/
+1myshopGitCommands.txt  dontUseNow/    microblog/        unins000.dat
+1PrepInterv/            etc/           mingw64/          unins000.exe*
+1techExprmnt/           git-bash.exe*  myshop/           unins000.msg
+2.JPG                   git-cmd.exe*   oldNewLists.html  usr/
+4.JPG                   gitcode/       Practice/         watch.html
+BBuckSourceTree2017/    gitjava/       proc/
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode
+$ ls
+1BrowserJavaScriptLC101Unit3DOT2.txt  dontUse/        JSstudios/  proj1/
+1JavaScriptLC101Unit3DOT2.txt         fitgrit/        LC101/      proj2/
+1MPMeditedUSEthis2017Oct25/           frontend/       MyJS/
+1USEthis2017Oct25/                    gmail_project/  MyPHP/
+2Myexpts1a2017Nov/                    JS2017/         myshop2/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode
+$ cd fitgrit
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ ls
+__pycache__/               mainfitgrit.py                  readme.txt
+FITGRITclient_secret.json  Prev2FITGRITclient_secret.json  static/
+fitgritemailer.py          PrevFITGRITclient_secret.json   templates/
+fitgrithome.html           Prevfitgritemailer.py
+FITGRITquickstart.py       PrevFITGRITquickstart.py
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ conda env list
+# conda environments:
+#
+env_flask                C:\Miniconda3\envs\env_flask
+envindia_flask           C:\Miniconda3\envs\envindia_flask
+hello-flask              C:\Miniconda3\envs\hello-flask
+helloflask               C:\Miniconda3\envs\helloflask
+root                  *  C:\Miniconda3
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ source activate env_flask
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ mainfitgrit.py
+bash: mainfitgrit.py: command not found
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [04/Jan/2018 10:34:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:34:58] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:35:06] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:35:06] "GET /fitgritstyling/fitgritstyle2.css HTTP/1.1" 404 -
+David
+gapp2017fallOct@gmail.com
+12
+C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\_helpers.py:255: UserWarning: Cannot access C:\User
+s\cody\.credentials\gmail-python-FITGRITquickstart.json: No such file or directory
+  warnings.warn(_MISSING_FILE_MESSAGE.format(filename))
+
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?client_id=779115434219-krl3jgrr4l6hqp75rvf6304f2b11f1d9.apps.goog
+leusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2
+Fgmail.send&access_type=offline&response_type=code
+
+If your browser is on a different machine then exit and re-run this
+application with the command-line parameter
+
+  --noauth_local_webserver
+
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ python mainfitgrit.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [04/Jan/2018 10:46:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:46:49] "POST /hello HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:49:37] "GET /email HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:49:37] "GET /fitgritstyling/fitgritstyle2.css HTTP/1.1" 404 -
+David
+gapp2017fallOct@gmail.com
+16
+127.0.0.1 - - [04/Jan/2018 10:50:00] "POST /email HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\mainfitgrit.py", line 39, in email_post
+    send_email(email,firstname,fitgrithours)
+  File "C:\Users\cody\Downloads\Git\gitcode\fitgrit\fitgritemailer.py", line 41, in send_email
+    message = messages.send(userId='me', body=body).execute()
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\_helpers.py", line 133, in positional_wrapp
+er
+    return wrapped(*args, **kwargs)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\googleapiclient\http.py", line 837, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\googleapiclient\http.py", line 163, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\transport.py", line 186, in new_request
+    credentials._refresh(orig_request_method)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\client.py", line 761, in _refresh
+    self._do_refresh_request(http)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\oauth2client\client.py", line 819, in _do_refresh_reques
+t
+    raise HttpAccessTokenRefreshError(error_msg, status=resp.status)
+oauth2client.client.HttpAccessTokenRefreshError: deleted_client: The OAuth client was deleted.
+127.0.0.1 - - [04/Jan/2018 10:50:00] "GET /email?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:50:00] "GET /email?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:50:00] "GET /email?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:50:00] "GET /email?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2018 10:50:00] "GET /email?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+
+
