@@ -1,0 +1,351 @@
+
+5:11 PM 1/7/2018
+
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode/fitgrit
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    fitgritstart.py
+        modified:   mainfitgrit.py
+        modified:   readme.txt
+        modified:   templates/fitgritaddList.html
+        modified:   templates/fitgritstyling/fitgritstyle1.css
+        modified:   templates/fitgritstyling/fitgritstyle2.css
+        modified:   templates/fitgrittextfiles/2017Dec16FitgritGitbashCmd1.txt
+        modified:   templates/form1.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        1FITGRITclient_secret.json
+        1FITGRITquickstart.py
+        FITGRITclient_secret.json
+        FITGRITquickstart.py
+        Prev2FITGRITclient_secret.json
+        PrevFITGRITclient_secret.json
+        PrevFITGRITquickstart.py
+        Prevfitgritemailer.py
+        __pycache__/
+        fitgritemailer.py
+        templates/fitgritimages/1.JPG
+        templates/fitgritimages/1Doubts2018Jan/
+        templates/fitgritimages/1DoubtsThirdTime2018Jan4Cookies/
+        templates/fitgritimages/DoubtsSecondTimeWithLCoderTOgapp/
+        templates/fitgritimages/DoubtsWithGapp2LCoder/
+        templates/fitgritimages/PrevfitgritemailerDOTpy2017Dec17Sun03am50.JPG
+        templates/fitgritimages/SUCCESS/FirstTImeWithGapp2LCoder/
+        templates/fitgritimages/SUCCESS/SuccessExpmnt/2017Dec16ToPRINTmyWebpage.JPG
+        templates/fitgritimages/SUCCESS/SuccessExpmnt/3.pdf
+        templates/fitgritimages/SUCCESS/SuccessSecondTimeWithLCoderTOgapp/
+        templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018Jan7/
+        templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018an4/
+        templates/fitgritimages/fitgritGmailAPIimages/
+        templates/fitgritimages/fitgritemailerDOTpy2017Dec17Sun03am50.JPG
+        templates/fitgrittextfiles/1a2018Jan4ThuFitgritGitbashCmd.txt
+        templates/fitgrittextfiles/2017Dec17EmailAccounts3TestProjestONLYnot4PersonalUse.txt
+        templates/fitgrittextfiles/2017Dec17SatFitgritGitbashCmd2gmailAPIsetup.txt
+        templates/fitgrittextfiles/2017Dec17SunfitgritClientSecret.txt
+        templates/fitgrittextfiles/2017fitgritgmailAPIprojClientIDandClientSecret.txt
+        templates/fitgrittextfiles/2018Jan4ThuFitgritGitbashCmd1.txt
+        templates/fitgrittextfiles/2018Jan4ThufitgritgmailAPIprojClientIDandClientSecret.txt
+        templates/fitgrittextfiles/2018Jan4WebHosting.txt
+        templates/fitgrittextfiles/HintsFromPreviousProjectTextFiles/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+Did you mean this?
+        add
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git commit -m "Fully working proj add,print,email"
+On branch master
+Changes not staged for commit:
+        deleted:    fitgritstart.py
+        modified:   mainfitgrit.py
+        modified:   readme.txt
+        modified:   templates/fitgritaddList.html
+        modified:   templates/fitgritstyling/fitgritstyle1.css
+        modified:   templates/fitgritstyling/fitgritstyle2.css
+        modified:   templates/fitgrittextfiles/2017Dec16FitgritGitbashCmd1.txt
+        modified:   templates/form1.html
+
+Untracked files:
+        1FITGRITclient_secret.json
+        1FITGRITquickstart.py
+        FITGRITclient_secret.json
+        FITGRITquickstart.py
+        Prev2FITGRITclient_secret.json
+        PrevFITGRITclient_secret.json
+        PrevFITGRITquickstart.py
+        Prevfitgritemailer.py
+        __pycache__/
+        fitgritemailer.py
+        templates/fitgritimages/1.JPG
+        templates/fitgritimages/1Doubts2018Jan/
+        templates/fitgritimages/1DoubtsThirdTime2018Jan4Cookies/
+        templates/fitgritimages/DoubtsSecondTimeWithLCoderTOgapp/
+        templates/fitgritimages/DoubtsWithGapp2LCoder/
+        templates/fitgritimages/PrevfitgritemailerDOTpy2017Dec17Sun03am50.JPG
+        templates/fitgritimages/SUCCESS/FirstTImeWithGapp2LCoder/
+        templates/fitgritimages/SUCCESS/SuccessExpmnt/2017Dec16ToPRINTmyWebpage.JPG
+        templates/fitgritimages/SUCCESS/SuccessExpmnt/3.pdf
+        templates/fitgritimages/SUCCESS/SuccessSecondTimeWithLCoderTOgapp/
+        templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018Jan7/
+        templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018an4/
+        templates/fitgritimages/fitgritGmailAPIimages/
+        templates/fitgritimages/fitgritemailerDOTpy2017Dec17Sun03am50.JPG
+        templates/fitgrittextfiles/1a2018Jan4ThuFitgritGitbashCmd.txt
+        templates/fitgrittextfiles/2017Dec17EmailAccounts3TestProjestONLYnot4PersonalUse.txt
+        templates/fitgrittextfiles/2017Dec17SatFitgritGitbashCmd2gmailAPIsetup.txt
+        templates/fitgrittextfiles/2017Dec17SunfitgritClientSecret.txt
+        templates/fitgrittextfiles/2017fitgritgmailAPIprojClientIDandClientSecret.txt
+        templates/fitgrittextfiles/2018Jan4ThuFitgritGitbashCmd1.txt
+        templates/fitgrittextfiles/2018Jan4ThufitgritgmailAPIprojClientIDandClientSecret.txt
+        templates/fitgrittextfiles/2018Jan4WebHosting.txt
+        templates/fitgrittextfiles/HintsFromPreviousProjectTextFiles/
+
+no changes added to commit
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    fitgritstart.py
+        modified:   mainfitgrit.py
+        modified:   readme.txt
+        modified:   templates/fitgritaddList.html
+        modified:   templates/fitgritstyling/fitgritstyle1.css
+        modified:   templates/fitgritstyling/fitgritstyle2.css
+        modified:   templates/fitgrittextfiles/2017Dec16FitgritGitbashCmd1.txt
+        modified:   templates/form1.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        1FITGRITclient_secret.json
+        1FITGRITquickstart.py
+        FITGRITclient_secret.json
+        FITGRITquickstart.py
+        Prev2FITGRITclient_secret.json
+        PrevFITGRITclient_secret.json
+        PrevFITGRITquickstart.py
+        Prevfitgritemailer.py
+        __pycache__/
+        fitgritemailer.py
+        templates/fitgritimages/1.JPG
+        templates/fitgritimages/1Doubts2018Jan/
+        templates/fitgritimages/1DoubtsThirdTime2018Jan4Cookies/
+        templates/fitgritimages/DoubtsSecondTimeWithLCoderTOgapp/
+        templates/fitgritimages/DoubtsWithGapp2LCoder/
+        templates/fitgritimages/PrevfitgritemailerDOTpy2017Dec17Sun03am50.JPG
+        templates/fitgritimages/SUCCESS/FirstTImeWithGapp2LCoder/
+        templates/fitgritimages/SUCCESS/SuccessExpmnt/2017Dec16ToPRINTmyWebpage.JPG
+        templates/fitgritimages/SUCCESS/SuccessExpmnt/3.pdf
+        templates/fitgritimages/SUCCESS/SuccessSecondTimeWithLCoderTOgapp/
+        templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018Jan7/
+        templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018an4/
+        templates/fitgritimages/fitgritGmailAPIimages/
+        templates/fitgritimages/fitgritemailerDOTpy2017Dec17Sun03am50.JPG
+        templates/fitgrittextfiles/1a2018Jan4ThuFitgritGitbashCmd.txt
+        templates/fitgrittextfiles/2017Dec17EmailAccounts3TestProjestONLYnot4PersonalUse.txt
+        templates/fitgrittextfiles/2017Dec17SatFitgritGitbashCmd2gmailAPIsetup.txt
+        templates/fitgrittextfiles/2017Dec17SunfitgritClientSecret.txt
+        templates/fitgrittextfiles/2017fitgritgmailAPIprojClientIDandClientSecret.txt
+        templates/fitgrittextfiles/2018Jan4ThuFitgritGitbashCmd1.txt
+        templates/fitgrittextfiles/2018Jan4ThufitgritgmailAPIprojClientIDandClientSecret.txt
+        templates/fitgrittextfiles/2018Jan4WebHosting.txt
+        templates/fitgrittextfiles/HintsFromPreviousProjectTextFiles/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git add .
+error: open("templates/fitgritimages/fitgritGmailAPIimages/CreatingGmailAPIprojFitgrit/FAILEDsecondTimeinstallationOFfitgritProjAsGmailAPIproject/3aSendingEmailThroServerFromMyFitgritOnWebBrowserUsinggapp2017falloctATgmail2017Dec17Sun.JPG"): Filename too long
+error: unable to index file templates/fitgritimages/fitgritGmailAPIimages/CreatingGmailAPIprojFitgrit/FAILEDsecondTimeinstallationOFfitgritProjAsGmailAPIproject/3aSendingEmailThroServerFromMyFitgritOnWebBrowserUsinggapp2017falloctATgmail2017Dec17Sun.JPG
+fatal: adding files failed
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ gt status
+bash: gt: command not found
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    fitgritstart.py
+        modified:   mainfitgrit.py
+        modified:   readme.txt
+        modified:   templates/fitgritaddList.html
+        modified:   templates/fitgritstyling/fitgritstyle1.css
+        modified:   templates/fitgritstyling/fitgritstyle2.css
+        modified:   templates/fitgrittextfiles/2017Dec16FitgritGitbashCmd1.txt
+        modified:   templates/form1.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        1FITGRITclient_secret.json
+        1FITGRITquickstart.py
+        FITGRITclient_secret.json
+        FITGRITquickstart.py
+        Prev2FITGRITclient_secret.json
+        PrevFITGRITclient_secret.json
+        PrevFITGRITquickstart.py
+        Prevfitgritemailer.py
+        __pycache__/
+        fitgritemailer.py
+        templates/fitgritimages/1.JPG
+        templates/fitgritimages/1Doubts2018Jan/
+        templates/fitgritimages/PrevfitgritemailerDOTpy2017Dec17Sun03am50.JPG
+        templates/fitgritimages/SUCCESS/FirstTImeWithGapp2LCoder/
+        templates/fitgritimages/SUCCESS/SuccessExpmnt/2017Dec16ToPRINTmyWebpage.JPG
+        templates/fitgritimages/SUCCESS/SuccessExpmnt/3.pdf
+        templates/fitgritimages/SUCCESS/SuccessSecondTimeWithLCoderTOgapp/
+        templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018Jan7/
+        templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018an4/
+        templates/fitgritimages/fitgritemailerDOTpy2017Dec17Sun03am50.JPG
+        templates/fitgrittextfiles/1a2018Jan4ThuFitgritGitbashCmd.txt
+        templates/fitgrittextfiles/2017Dec17EmailAccounts3TestProjestONLYnot4PersonalUse.txt
+        templates/fitgrittextfiles/2017Dec17SatFitgritGitbashCmd2gmailAPIsetup.txt
+        templates/fitgrittextfiles/2017Dec17SunfitgritClientSecret.txt
+        templates/fitgrittextfiles/2017fitgritgmailAPIprojClientIDandClientSecret.txt
+        templates/fitgrittextfiles/2018Jan4ThuFitgritGitbashCmd1.txt
+        templates/fitgrittextfiles/2018Jan4ThufitgritgmailAPIprojClientIDandClientSecret.txt
+        templates/fitgrittextfiles/2018Jan4WebHosting.txt
+        templates/fitgrittextfiles/HintsFromPreviousProjectTextFiles/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git add .
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   1FITGRITclient_secret.json
+        new file:   1FITGRITquickstart.py
+        new file:   FITGRITclient_secret.json
+        renamed:    fitgritstart.py -> FITGRITquickstart.py
+        new file:   Prev2FITGRITclient_secret.json
+        new file:   PrevFITGRITclient_secret.json
+        new file:   PrevFITGRITquickstart.py
+        new file:   Prevfitgritemailer.py
+        new file:   __pycache__/fitgritemailer.cpython-36.pyc
+        new file:   fitgritemailer.py
+        modified:   mainfitgrit.py
+        modified:   readme.txt
+        modified:   templates/fitgritaddList.html
+        new file:   templates/fitgritimages/1.JPG
+        new file:   templates/fitgritimages/1Doubts2018Jan/1.JPG
+        new file:   templates/fitgritimages/1Doubts2018Jan/2.JPG
+        new file:   templates/fitgritimages/1Doubts2018Jan/3.JPG
+        new file:   templates/fitgritimages/1Doubts2018Jan/33.JPG
+        new file:   templates/fitgritimages/PrevfitgritemailerDOTpy2017Dec17Sun03am50.JPG
+        new file:   templates/fitgritimages/SUCCESS/FirstTImeWithGapp2LCoder/1a2017Dec17fitgritDisplaysSLASHemailRouteGETmethod.JPG
+        new file:   templates/fitgritimages/SUCCESS/FirstTImeWithGapp2LCoder/2017Dec17fitgritDisplaysSLASHhelloRoute.JPG
+        new file:   templates/fitgritimages/SUCCESS/SuccessExpmnt/2017Dec16ToPRINTmyWebpage.JPG
+        new file:   templates/fitgritimages/SUCCESS/SuccessExpmnt/3.pdf
+        new file:   templates/fitgritimages/SUCCESS/SuccessSecondTimeWithLCoderTOgapp/1a2017Dec17fitgritDisplaysSLASHemailRouteGETmethod05am29.JPG
+        new file:   templates/fitgritimages/SUCCESS/SuccessSecondTimeWithLCoderTOgapp/2017Dec17fitgritDisplaysWithLCoderSLASHhelloRoute05AM19.JPG
+        new file:   templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018Jan7/1.JPG
+        new file:   templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018Jan7/2.JPG
+        new file:   templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018Jan7/3.JPG
+        new file:   templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018Jan7/4.JPG
+        new file:   templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018an4/2018Jan4Thu.JPG
+        new file:   templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018an4/2018Jan4Thu11am56.JPG
+        new file:   templates/fitgritimages/fitgritemailerDOTpy2017Dec17Sun03am50.JPG
+        modified:   templates/fitgritstyling/fitgritstyle1.css
+        modified:   templates/fitgritstyling/fitgritstyle2.css
+        new file:   templates/fitgrittextfiles/1a2018Jan4ThuFitgritGitbashCmd.txt
+        modified:   templates/fitgrittextfiles/2017Dec16FitgritGitbashCmd1.txt
+        new file:   templates/fitgrittextfiles/2017Dec17EmailAccounts3TestProjestONLYnot4PersonalUse.txt
+        new file:   templates/fitgrittextfiles/2017Dec17SatFitgritGitbashCmd2gmailAPIsetup.txt
+        new file:   templates/fitgrittextfiles/2017Dec17SunfitgritClientSecret.txt
+        new file:   templates/fitgrittextfiles/2017fitgritgmailAPIprojClientIDandClientSecret.txt
+        new file:   templates/fitgrittextfiles/2018Jan4ThuFitgritGitbashCmd1.txt
+        new file:   templates/fitgrittextfiles/2018Jan4ThufitgritgmailAPIprojClientIDandClientSecret.txt
+        new file:   templates/fitgrittextfiles/2018Jan4WebHosting.txt
+        new file:   templates/fitgrittextfiles/HintsFromPreviousProjectTextFiles/HINTSfromPreviousProjectsSetUpAsGmailAPIappProjectsUsingPythonFlask2017Dec11Mon.txt
+        new file:   templates/fitgrittextfiles/HintsFromPreviousProjectTextFiles/HINTSfromPreviousProjectsSetUpAsGmailAPIappProjectsUsingPythonFlask2017Dec14Mon.txt
+        modified:   templates/form1.html
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git commit -m "Fully working proj add,print,email"
+[master b2a78fe] Fully working proj add,print,email
+ 46 files changed, 2869 insertions(+), 23 deletions(-)
+ create mode 100644 1FITGRITclient_secret.json
+ create mode 100644 1FITGRITquickstart.py
+ create mode 100644 FITGRITclient_secret.json
+ rename fitgritstart.py => FITGRITquickstart.py (92%)
+ create mode 100644 Prev2FITGRITclient_secret.json
+ create mode 100644 PrevFITGRITclient_secret.json
+ create mode 100644 PrevFITGRITquickstart.py
+ create mode 100644 Prevfitgritemailer.py
+ create mode 100644 __pycache__/fitgritemailer.cpython-36.pyc
+ create mode 100644 fitgritemailer.py
+ create mode 100644 templates/fitgritimages/1.JPG
+ create mode 100644 templates/fitgritimages/1Doubts2018Jan/1.JPG
+ create mode 100644 templates/fitgritimages/1Doubts2018Jan/2.JPG
+ create mode 100644 templates/fitgritimages/1Doubts2018Jan/3.JPG
+ create mode 100644 templates/fitgritimages/1Doubts2018Jan/33.JPG
+ create mode 100644 templates/fitgritimages/PrevfitgritemailerDOTpy2017Dec17Sun03am50.JPG
+ create mode 100644 templates/fitgritimages/SUCCESS/FirstTImeWithGapp2LCoder/1a2017Dec17fitgritDisplaysSLASHemailRouteGETmethod.JPG
+ create mode 100644 templates/fitgritimages/SUCCESS/FirstTImeWithGapp2LCoder/2017Dec17fitgritDisplaysSLASHhelloRoute.JPG
+ create mode 100644 templates/fitgritimages/SUCCESS/SuccessExpmnt/2017Dec16ToPRINTmyWebpage.JPG
+ create mode 100644 templates/fitgritimages/SUCCESS/SuccessExpmnt/3.pdf
+ create mode 100644 templates/fitgritimages/SUCCESS/SuccessSecondTimeWithLCoderTOgapp/1a2017Dec17fitgritDisplaysSLASHemailRouteGETmethod05am29.JPG
+ create mode 100644 templates/fitgritimages/SUCCESS/SuccessSecondTimeWithLCoderTOgapp/2017Dec17fitgritDisplaysWithLCoderSLASHhelloRoute05AM19.JPG
+ create mode 100644 templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018Jan7/1.JPG
+ create mode 100644 templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018Jan7/2.JPG
+ create mode 100644 templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018Jan7/3.JPG
+ create mode 100644 templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018Jan7/4.JPG
+ create mode 100644 templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018an4/2018Jan4Thu.JPG
+ create mode 100644 templates/fitgritimages/SUCCESS/SuccessThirdTimeWithLCoderTOgapp2018an4/2018Jan4Thu11am56.JPG
+ create mode 100644 templates/fitgritimages/fitgritemailerDOTpy2017Dec17Sun03am50.JPG
+ create mode 100644 templates/fitgrittextfiles/1a2018Jan4ThuFitgritGitbashCmd.txt
+ create mode 100644 templates/fitgrittextfiles/2017Dec17EmailAccounts3TestProjestONLYnot4PersonalUse.txt
+ create mode 100644 templates/fitgrittextfiles/2017Dec17SatFitgritGitbashCmd2gmailAPIsetup.txt
+ create mode 100644 templates/fitgrittextfiles/2017Dec17SunfitgritClientSecret.txt
+ create mode 100644 templates/fitgrittextfiles/2017fitgritgmailAPIprojClientIDandClientSecret.txt
+ create mode 100644 templates/fitgrittextfiles/2018Jan4ThuFitgritGitbashCmd1.txt
+ create mode 100644 templates/fitgrittextfiles/2018Jan4ThufitgritgmailAPIprojClientIDandClientSecret.txt
+ create mode 100644 templates/fitgrittextfiles/2018Jan4WebHosting.txt
+ create mode 100644 templates/fitgrittextfiles/HintsFromPreviousProjectTextFiles/HINTSfromPreviousProjectsSetUpAsGmailAPIappProjectsUsingPythonFlask2017Dec11Mon.txt
+ create mode 100644 templates/fitgrittextfiles/HintsFromPreviousProjectTextFiles/HINTSfromPreviousProjectsSetUpAsGmailAPIappProjectsUsingPythonFlask2017Dec14Mon.txt
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/fitgrit (master)
+$ git push origin master
+
+
+
